@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-primary: #6366f1;
+  --color-cyber-secondary: #a855f7;
+  --color-cyber-accent: #22d3ee;
+  --color-cyber-dark: #0f172a;
+  --color-cyber-light: #1e293b;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-dark text-slate-100 font-sans;
+    scrollbar-gutter: stable;
+  }
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-white/5;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.premium-gradient {
+  @apply bg-gradient-to-br from-cyber-primary via-cyber-secondary to-cyber-accent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}

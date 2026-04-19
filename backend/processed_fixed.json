@@ -1,0 +1,7251 @@
+[
+    {
+        "user_id": "770b3ae5-5648-4931-a974-5ee18c4a479a",
+        "name": "Siddharth Gola",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.8,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "3f264088-5f8b-4b31-a7da-3370b414ce01",
+        "name": "Keya Gole",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "postgresql",
+            "express",
+            "azure",
+            "node",
+            "mysql",
+            "rest",
+            "aws",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.5,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "3bdf4739-a8e0-4afa-92a5-e59fdcf40291",
+        "name": "Anirudh Bandi",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "postgresql",
+            "flask",
+            "python",
+            "pandas",
+            "mysql",
+            "rest",
+            "microservices",
+            "sql",
+            "typescript",
+            "api",
+            "mongodb"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.2,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "7cdfe6c2-1cdb-423c-b3f5-c63f986cfd36",
+        "name": "Libni Sibal",
+        "role": "Data Scientist",
+        "domain": "frontend",
+        "skills": [
+            "angular",
+            "python",
+            "express",
+            "node",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "mongodb"
+        ],
+        "experience": 6,
+        "avg_quality_score": 3.4,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "47181639-284c-4426-a75f-d32c2e0de6de",
+        "name": "Naksh Chatterjee",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 6,
+        "avg_quality_score": 4.5,
+        "reliability_score": 97
+    },
+    {
+        "user_id": "a8b1b5e9-8596-4555-9270-7abedf9b52ea",
+        "name": "Ishwar Kakar",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.3,
+        "reliability_score": 73
+    },
+    {
+        "user_id": "49bfec4e-8d18-426a-8b4c-9e3486105189",
+        "name": "Warhi Sachar",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "postgresql",
+            "express",
+            "node",
+            "mysql",
+            "rest",
+            "aws",
+            "javascript",
+            "microservices",
+            "sql",
+            "typescript",
+            "api",
+            "mongodb"
+        ],
+        "experience": 8,
+        "avg_quality_score": 5.0,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "6a2d8a84-81d6-4d05-8b74-b9797cfc3007",
+        "name": "Hiral Sachdeva",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "docker",
+            "postgresql",
+            "flask",
+            "express",
+            "python",
+            "node",
+            "mysql",
+            "rest",
+            "redis",
+            "javascript",
+            "microservices",
+            "sql",
+            "kubernetes",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.6,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "db3b9431-0d4f-4eff-bb6e-8e3d111f1628",
+        "name": "Lila Oommen",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "postgresql",
+            "flask",
+            "python",
+            "pandas",
+            "mysql",
+            "redis",
+            "aws",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 6,
+        "avg_quality_score": 4.9,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "8c956db5-6aa5-48b6-9b5b-a00e45b8c60c",
+        "name": "Sneha Sodhi",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "docker",
+            "postgresql",
+            "flask",
+            "python",
+            "mysql",
+            "rest",
+            "redis",
+            "microservices",
+            "sql",
+            "typescript",
+            "kubernetes",
+            "api",
+            "mongodb"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.5,
+        "reliability_score": 94
+    },
+    {
+        "user_id": "5b1827a2-e986-4883-b6c6-0b67baaae144",
+        "name": "Ekta Chaudry",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 7,
+        "avg_quality_score": 3.9,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "4bb57580-c4e6-45b4-8219-2269661b7321",
+        "name": "Saumya Gera",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.0,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "ef78b90d-6445-4f77-b886-6f46c0f07b35",
+        "name": "Meghana Dewan",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "html",
+            "redux"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.8,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "6735b109-7004-43c1-a5eb-098fe66862d4",
+        "name": "Ekavir Chatterjee",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "azure",
+            "node",
+            "mysql",
+            "rest",
+            "redis",
+            "aws",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 6,
+        "avg_quality_score": 4.4,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "91f176a5-f8a9-4553-a9c7-3c1fb2160d5c",
+        "name": "Laban Prakash",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "postgresql",
+            "flask",
+            "python",
+            "pandas",
+            "mysql",
+            "redis",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.5,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "62ff9a1a-e3b4-4a2a-af5b-e1e6da74cc8b",
+        "name": "Chakradhar Nagi",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 7,
+        "avg_quality_score": 3.5,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "96e06ca4-ac0e-42ca-a1bb-a23a64c77cbb",
+        "name": "Veer Date",
+        "role": "Data Scientist",
+        "domain": "frontend",
+        "skills": [
+            "numpy",
+            "angular",
+            "python",
+            "azure",
+            "pandas",
+            "express",
+            "node",
+            "aws",
+            "machine learning",
+            "typescript",
+            "tensorflow",
+            "mongodb"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.0,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "762f3f8f-c638-498b-8049-33d62b5f7cde",
+        "name": "Reyansh Ranganathan",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "rest",
+            "javascript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.8,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "bcd5a3ca-1553-41e1-a42a-7ae52c70f644",
+        "name": "Neel Sani",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "postgresql",
+            "flask",
+            "express",
+            "azure",
+            "node",
+            "mysql",
+            "rest",
+            "redis",
+            "aws",
+            "javascript",
+            "microservices",
+            "sql",
+            "typescript",
+            "api",
+            "mongodb"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.3,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "f93e3cbd-5e07-4201-8875-22f56fce95b7",
+        "name": "Balendra Sankar",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "postgresql",
+            "flask",
+            "python",
+            "pandas",
+            "mysql",
+            "rest",
+            "redis",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 6,
+        "avg_quality_score": 4.4,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "6fd4e0d3-876d-443f-bc23-eb588fd14cf4",
+        "name": "Abeer Vyas",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 8,
+        "avg_quality_score": 5.0,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "984522bf-5f41-48e4-ba06-68f458f959b5",
+        "name": "Urvi Sura",
+        "role": "Data Scientist",
+        "domain": "frontend",
+        "skills": [
+            "numpy",
+            "angular",
+            "python",
+            "azure",
+            "pandas",
+            "express",
+            "node",
+            "aws",
+            "machine learning",
+            "typescript",
+            "tensorflow",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.4,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "a7c0dd81-ccbd-4cac-a798-31ef3fa4977a",
+        "name": "Wriddhish Mohanty",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "git",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.9,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "851fed22-0573-499e-af72-a0d4553e2724",
+        "name": "Hemal Goda",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "docker",
+            "postgresql",
+            "flask",
+            "express",
+            "node",
+            "mysql",
+            "rest",
+            "redis",
+            "javascript",
+            "microservices",
+            "sql",
+            "typescript",
+            "kubernetes",
+            "api",
+            "mongodb"
+        ],
+        "experience": 6,
+        "avg_quality_score": 4.9,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "2cdc9817-3d45-43cd-861a-a0b19bebd2d8",
+        "name": "Saumya Divan",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "docker",
+            "postgresql",
+            "git",
+            "flask",
+            "python",
+            "mysql",
+            "rest",
+            "redis",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.8,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "0c077627-08d0-4491-938e-8448b93e771c",
+        "name": "Farhan Seth",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "git",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 7,
+        "avg_quality_score": 3.8,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "66a75ddd-7b14-4e06-bcb8-f22d9d426d67",
+        "name": "Ojas Narula",
+        "role": "Data Scientist",
+        "domain": "frontend",
+        "skills": [
+            "numpy",
+            "git",
+            "angular",
+            "python",
+            "azure",
+            "pandas",
+            "express",
+            "node",
+            "aws",
+            "machine learning",
+            "typescript",
+            "tensorflow",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.1,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "fe3e6354-2d1f-40f8-adda-9d14ed53c6a8",
+        "name": "Ati Mann",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "tailwind",
+            "git",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "node",
+            "mysql",
+            "javascript",
+            "aws",
+            "firebase",
+            "sql",
+            "machine learning",
+            "typescript",
+            "mongodb"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.8,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "7d709611-85c7-4cb4-bce2-43cf3aa733fb",
+        "name": "Diya Kade",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "tailwind",
+            "git",
+            "angular",
+            "python",
+            "react",
+            "node",
+            "mysql",
+            "javascript",
+            "aws",
+            "firebase",
+            "sql",
+            "machine learning",
+            "typescript",
+            "mongodb"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.7,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "8538e9c9-eb4e-46dd-9875-0745bb8169a6",
+        "name": "Naveen Tak",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "api",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.3,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "e8ab11df-1920-474e-b40b-837906e0db20",
+        "name": "Ekaja Sachdeva",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.0,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "a8b85086-5c36-48ea-9c03-0ff9859edc53",
+        "name": "Jackson Varma",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "api",
+            "typescript",
+            "sql"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.4,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "14b511e7-6216-467f-b244-9bebd589cdfe",
+        "name": "Ekanta Khosla",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "api",
+            "typescript",
+            "firebase",
+            "sql"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.4,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "06aa19af-d490-468e-8edd-8abf5f469ebf",
+        "name": "Vrinda Khanna",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "api",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.6,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "5fc5b1ac-210b-40ac-8f37-06d025de0ae0",
+        "name": "Gaurav Murty",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "api",
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.5,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "9fa65f8c-a205-47a7-aee5-77f65fc34fb1",
+        "name": "Yug Patla",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "typescript",
+            "firebase",
+            "sql",
+            "api"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.6,
+        "reliability_score": 94
+    },
+    {
+        "user_id": "359e8f13-80ea-4aed-8a9c-b534bf003074",
+        "name": "Turvi Warrior",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "api",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.0,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "62765809-ee18-4362-9509-41cf47831b69",
+        "name": "Chanakya Muni",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "api",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.7,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "f4948148-4306-407a-97d1-f0bbfac922bb",
+        "name": "Chakradhar Bali",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "api",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.8,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "55fb5ae5-92f8-4d56-bfc4-fa92d21e88a7",
+        "name": "Rajata Narula",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "api",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.8,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "1b883eba-4917-4404-b8b8-9cefe0e77594",
+        "name": "Farhan Wali",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "typescript",
+            "firebase",
+            "sql",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.6,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "694017aa-29dc-479b-b97b-540d6cc07147",
+        "name": "Kala Dada",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "api",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.6,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "8ffd9733-a507-4da0-9e52-082e94c7e959",
+        "name": "Avni Bhatia",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "api",
+            "typescript"
+        ],
+        "experience": 10,
+        "avg_quality_score": 4.6,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "7b514ec8-358b-4cba-b802-e76786a36b31",
+        "name": "Maya Pingle",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.4,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "9af0d5c3-695e-47bc-a62f-91aec0d507ab",
+        "name": "Qasim Natt",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "rest",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.4,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "ac200a18-20d0-4064-9ea6-a3b3d9f36d49",
+        "name": "Darsh Bahri",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 9,
+        "avg_quality_score": 3.4,
+        "reliability_score": 94
+    },
+    {
+        "user_id": "a34e12b5-11d9-4b47-af13-7090a6ec29ea",
+        "name": "Bina Atwal",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.5,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "531ef323-3dc8-464e-a0fd-98ae2444e936",
+        "name": "Bachittar Vig",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "rest",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.9,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "b03469e5-0147-4201-adf7-71c6ae5ec91c",
+        "name": "Orinder Ramaswamy",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.8,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "86169b2a-88cc-45c0-93b0-a8bc651c7970",
+        "name": "Krisha Keer",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "rest",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.6,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "6a3c6693-fd9c-426e-9d7a-4c957cabcc2e",
+        "name": "Quincy Ahuja",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.5,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "0c5fae4a-17a8-4e93-9848-212f03898bda",
+        "name": "Yashasvi Pant",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.8,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "28561ceb-b21a-43d5-ab2b-476ab26b7f40",
+        "name": "Karan Kurian",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "rest",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.2,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "6c7211a1-0f81-41c3-88c3-0110e424fbf3",
+        "name": "Anika Bahl",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.6,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "240067cb-7e5c-4ae4-85d0-9744e17b463a",
+        "name": "Anamika Contractor",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.1,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "929ef18f-0c13-428b-900c-9b0ce4609390",
+        "name": "Vamakshi Dass",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "rest",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.7,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "8fe4794e-e488-43f1-b86e-ed5d3a9f8263",
+        "name": "Rajata Shetty",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.6,
+        "reliability_score": 94
+    },
+    {
+        "user_id": "c7fa3bb3-47ea-4a24-bde7-172b7b6e06eb",
+        "name": "Dominic Modi",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "rest",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.7,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "e2482f97-4c54-4e81-ab7b-175214a6c46c",
+        "name": "Laksh Joshi",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "docker",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 5.0,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "f762d8cb-7e31-4596-9251-0bf1dc421d09",
+        "name": "Dalaja Kara",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "typescript",
+            "aws",
+            "python",
+            "azure"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.3,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "0d846980-e6b2-4120-a8ca-74b38e35e9db",
+        "name": "Aashi Purohit",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.3,
+        "reliability_score": 71
+    },
+    {
+        "user_id": "5556e6ea-2eb7-47e2-b7e3-7d23eb9b3fff",
+        "name": "Naveen Pathak",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "express",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.4,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "a9599ad6-14b9-47cb-9aff-533327c5051b",
+        "name": "Xalak Loyal",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.8,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "8adedeec-7b9c-4e5d-b398-8c5670d17b10",
+        "name": "Jagat Viswanathan",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 0,
+        "avg_quality_score": 5.0,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "541a28a3-f3da-4983-af6b-c2387d208319",
+        "name": "Mugdha Raval",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "typescript",
+            "aws",
+            "python",
+            "azure"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.6,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "6af41578-a75e-4592-9900-425fadb0f986",
+        "name": "Samaksh Cheema",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.0,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "1adb19da-9946-488a-9af6-707107239eb8",
+        "name": "Anusha Cherian",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "express",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.7,
+        "reliability_score": 71
+    },
+    {
+        "user_id": "6a87fd12-c3e8-4575-9525-18a8db2546b0",
+        "name": "Vasatika Solanki",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.4,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "e9db11eb-3726-4d52-b70f-f09b4ef8819c",
+        "name": "Janani Patel",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.5,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "5a8a657f-d81d-4cee-af21-074bc9453cd0",
+        "name": "Pahal Bath",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "typescript",
+            "aws",
+            "python",
+            "azure"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.6,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "8eded656-768c-480f-8e95-764e4b59b8cc",
+        "name": "Charan Raju",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.0,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "7e588d93-3593-4e13-8f47-ba24e1953ce4",
+        "name": "Saumya Khurana",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "express",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.9,
+        "reliability_score": 71
+    },
+    {
+        "user_id": "11f34c86-cff7-4f8b-9083-9729c8e21c26",
+        "name": "Geetika Kaul",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.8,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "7a7cec66-dc97-4c1a-bcd9-42cd645851d9",
+        "name": "Varenya Dewan",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.5,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "7cde38f5-3314-48db-9f1b-353da3ebe8dc",
+        "name": "Ridhi Jaggi",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.1,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "bf7b9a8c-73c1-4a4c-9e24-87092a5e9abb",
+        "name": "Lekha Balakrishnan",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.1,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "9531e5f7-6f45-4cc6-a377-dfb35da3d4fd",
+        "name": "Rushil Iyengar",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 9,
+        "avg_quality_score": 4.8,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "49658772-c78c-4068-ae21-f29fd4ce0c86",
+        "name": "Raghav Kala",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.3,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "a2c929c1-bdcf-4f5f-a11b-3cf75ca8f204",
+        "name": "Atharv Warrior",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.9,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "ba4cab06-f0ea-41ad-8c76-43288e9d4722",
+        "name": "Ranveer Joshi",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.9,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "6d2e2051-184a-44d5-95ed-d606262cbdb7",
+        "name": "Fiyaz Cheema",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.7,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "69c2b9dd-62dc-45e1-a64a-b6d8ad9c50be",
+        "name": "Ria Suresh",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.0,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "80c4e37d-a8e0-42c8-8609-fa74db518c7c",
+        "name": "Janya Dhaliwal",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 6,
+        "avg_quality_score": 5.0,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "0e69f5f7-1b31-4d0c-b555-2b17e7d7e186",
+        "name": "Ranbir Natt",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.6,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "49aa5146-c1f9-4c0f-b8b5-e570d093a43a",
+        "name": "Harshil Munshi",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.3,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "8a740528-71bf-40a7-a5d9-ce1acabae839",
+        "name": "Chakrika Prabhakar",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.6,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "3d35ea0d-fcdf-497f-b817-60be95bf1fae",
+        "name": "Gaurav Chand",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.9,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "ed313c21-643f-46c8-99e7-6e9df54c1066",
+        "name": "Neha Tank",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.4,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "8f946291-12c8-47fb-bd95-6d9c36cb059d",
+        "name": "Fariq Bal",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.7,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "eff42921-9983-4d05-b6c3-e6b5a8a0b0b3",
+        "name": "Jason Taneja",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.8,
+        "reliability_score": 97
+    },
+    {
+        "user_id": "b8cadd82-7da6-4d5b-805a-744d97ca7f33",
+        "name": "Sanaya Raja",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.1,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "411f3312-b17e-4371-be44-df6555f2fdde",
+        "name": "Janani Sani",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.4,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "48236c3d-9865-40ff-94f8-1b1083022a99",
+        "name": "Falak Gera",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 12,
+        "avg_quality_score": 5.0,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "2b65ff76-13e7-42eb-a30c-6f09c7a82494",
+        "name": "Zayyan Narang",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.4,
+        "reliability_score": 66
+    },
+    {
+        "user_id": "a5007098-4361-46ec-8bfe-0fbee3b5c760",
+        "name": "Vaishnavi Agrawal",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "express",
+            "python",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.4,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "ddf2e8a0-8f3f-44eb-a32e-92811c8483b4",
+        "name": "Sachi Suri",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "postgresql",
+            "flask",
+            "python",
+            "spring",
+            "redis",
+            "microservices",
+            "sql",
+            "typescript",
+            "kubernetes",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.7,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "d2ddab8b-2a3d-48c7-b041-a05c93dd34d9",
+        "name": "Megha Ranganathan",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "ci/cd",
+            "postgresql",
+            "flask",
+            "python",
+            "rest",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.2,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "d188b9ca-0538-4a46-ac90-f55230b69328",
+        "name": "Maya Morar",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "docker",
+            "flask",
+            "express",
+            "python",
+            "node",
+            "mysql",
+            "redis",
+            "javascript",
+            "microservices",
+            "sql",
+            "typescript",
+            "api",
+            "mongodb"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.2,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "e0bfb669-1061-45ab-9f76-14488ca55cc8",
+        "name": "Zaid Kibe",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "spring",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.3,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "64adbb85-47cf-450d-ad64-d5f5dc42489c",
+        "name": "Aachal Chhabra",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "express",
+            "python",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.8,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "52bb84e5-a8b3-49cc-9f39-c98d8d42fbae",
+        "name": "Simon Sha",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "postgresql",
+            "flask",
+            "python",
+            "spring",
+            "redis",
+            "microservices",
+            "sql",
+            "typescript",
+            "kubernetes",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.2,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "98628100-9ef1-4343-98c9-b82f969f01cd",
+        "name": "Radha Jain",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "ci/cd",
+            "postgresql",
+            "flask",
+            "python",
+            "rest",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.1,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "02ae6097-9901-4446-b82e-ee4c03799d89",
+        "name": "Gavin Amble",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "docker",
+            "flask",
+            "express",
+            "python",
+            "node",
+            "mysql",
+            "redis",
+            "javascript",
+            "microservices",
+            "sql",
+            "typescript",
+            "api",
+            "mongodb"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.7,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "016406fc-5760-41c7-899d-75dc45f8c1ae",
+        "name": "Kashish Mannan",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "spring",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.1,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "6b6e194d-4a82-4759-bf88-af8b643dc7d6",
+        "name": "Samar Aggarwal",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "express",
+            "python",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.4,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "56e24178-8c06-4418-86dc-7ffc1210421e",
+        "name": "Falak Sampath",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "postgresql",
+            "flask",
+            "python",
+            "spring",
+            "redis",
+            "microservices",
+            "sql",
+            "typescript",
+            "kubernetes",
+            "api"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.6,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "4664f5ee-1323-4663-91d6-94985374684b",
+        "name": "Pranit Bhakta",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "ci/cd",
+            "postgresql",
+            "flask",
+            "python",
+            "rest",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 10,
+        "avg_quality_score": 3.7,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "533fdd6d-7b00-4325-a8f0-d5c77d06ccef",
+        "name": "Parth Apte",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "docker",
+            "flask",
+            "express",
+            "python",
+            "node",
+            "mysql",
+            "redis",
+            "javascript",
+            "microservices",
+            "sql",
+            "typescript",
+            "api",
+            "mongodb"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.0,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "763951b3-7e82-4cd8-a0f7-73f067ed41c4",
+        "name": "Mekhala Dua",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "spring",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.8,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "8957200d-2c1a-4633-b1ff-e3bfdd7b0d32",
+        "name": "Indali Narang",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "angular",
+            "react",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.9,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "fb476255-7daa-4829-9d9b-e0459ce195c3",
+        "name": "Michael Gour",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "ci/cd",
+            "postgresql",
+            "express",
+            "node",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 7,
+        "avg_quality_score": 3.7,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "c98d9039-391b-4f9d-816c-f2fd746a745d",
+        "name": "Barkha Sabharwal",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "docker",
+            "vue",
+            "flask",
+            "node",
+            "graphql",
+            "mysql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.5,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "be1c36e8-3311-407b-a605-434ba1723b92",
+        "name": "Vihaan Balan",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "node",
+            "react",
+            "mysql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "mongodb"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.5,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "a45408cf-89f9-4db8-bf10-48f3927af187",
+        "name": "Robert Tella",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "postgresql",
+            "angular",
+            "express",
+            "node",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.9,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "283155e0-9640-4b7b-8838-0b4d7e02cc34",
+        "name": "Sai Gupta",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "angular",
+            "react",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.6,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "e9f5e993-821d-41e3-8fdd-52fbb3b61eec",
+        "name": "Nicholas Palla",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "ci/cd",
+            "postgresql",
+            "express",
+            "node",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.2,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "b5118411-2a6a-46e6-bb72-490c0222406b",
+        "name": "Isaac Bala",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "docker",
+            "vue",
+            "flask",
+            "node",
+            "graphql",
+            "mysql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.8,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "7829a4c5-f0d9-45b2-8be7-b2e01021bbb5",
+        "name": "Krishna Chawla",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "node",
+            "react",
+            "mysql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.1,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "0613646a-15e7-49b6-a730-46fbb87d3b54",
+        "name": "Ranveer Ganesan",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "postgresql",
+            "angular",
+            "express",
+            "node",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.3,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "99da0254-8d7a-491d-b64c-a9ecea029cfd",
+        "name": "Aarini Bir",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.5,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "bae4f2ba-eb26-47fd-9c7c-1e8bd995be03",
+        "name": "Pallavi Biswas",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.8,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "5fe48dba-1f77-468d-a811-1a886b31b186",
+        "name": "Chakradev Char",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "typescript",
+            "microservices"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.9,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "dbfd7d14-f1f9-40d5-909d-00a11b611d02",
+        "name": "Sanya Rastogi",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.2,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "43ac8e0b-56e8-4f0b-9770-e453940c6e85",
+        "name": "Jagrati Hayre",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.3,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "0a03a087-4e1a-4510-8d46-e20134859100",
+        "name": "Anay Minhas",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow",
+            "api"
+        ],
+        "experience": 8,
+        "avg_quality_score": 4.6,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "79daf21e-8e83-4dca-a8db-24cffd79ed62",
+        "name": "Yatin Mittal",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "typescript",
+            "microservices"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.2,
+        "reliability_score": 73
+    },
+    {
+        "user_id": "95e57034-4da0-4f4b-a7a0-0831405ee2a5",
+        "name": "Nihal Contractor",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.7,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "e2cab626-cef4-49cd-9539-1a5b859131f2",
+        "name": "Elijah Pillai",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.6,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "1f60a503-eec5-457a-8589-368248593f6d",
+        "name": "Avni Pant",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow",
+            "api"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.6,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "86bd7604-1d09-40aa-bb0b-db24df578186",
+        "name": "Mason Bedi",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "typescript",
+            "microservices"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.6,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "9030fc1a-4710-41b3-bdc5-4628b408859d",
+        "name": "Yagnesh Pradhan",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 7,
+        "avg_quality_score": 3.4,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "703e9f31-1130-4a6a-a661-2ae65729de57",
+        "name": "Dayita Narayanan",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.9,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "9fa619f4-bd3b-4dfc-84bd-39df705ee749",
+        "name": "Arin Choudhry",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "sql"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.9,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "fb6c4d23-55fc-4ee7-98aa-3bfa9bf4dded",
+        "name": "Ekantika Anne",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.8,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "b42c32d0-d687-44cf-bafe-3c185c04fba5",
+        "name": "Rachita Gour",
+        "role": "Data Scientist",
+        "domain": "general",
+        "skills": [
+            "python",
+            "typescript"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.0,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "8c8d79ea-3772-4846-b757-66f046119bb1",
+        "name": "Aradhana Deo",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.8,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "7e01a0bc-da06-41f3-8627-15587a6bdaec",
+        "name": "Avi Prabhu",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "sql"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.4,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "8e9f261c-64f7-4ec8-8f46-8d9eab1e0dac",
+        "name": "Nikita Bala",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.5,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "83557069-50a0-4697-9de2-d13f458895d7",
+        "name": "Leena Jain",
+        "role": "Data Scientist",
+        "domain": "general",
+        "skills": [
+            "python",
+            "typescript"
+        ],
+        "experience": 9,
+        "avg_quality_score": 4.5,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "a5a98007-e379-4064-8af7-2625991fc2ce",
+        "name": "Sanaya Khare",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.1,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "24d4c0dc-5cc6-4344-927c-1def6e8e9567",
+        "name": "Wazir Peri",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "sql"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.7,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "d9b27dbb-f581-4713-b485-487a259a1fb7",
+        "name": "Nachiket Sinha",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.8,
+        "reliability_score": 97
+    },
+    {
+        "user_id": "9799d0d3-ea5c-451e-90bd-48492382008c",
+        "name": "Mitali Varghese",
+        "role": "Data Scientist",
+        "domain": "general",
+        "skills": [
+            "python",
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.5,
+        "reliability_score": 71
+    },
+    {
+        "user_id": "81970ccb-7b0d-4e05-92a7-82494da200a0",
+        "name": "Pallavi Sabharwal",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.1,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "6a5733f3-bc17-400b-a67d-7ecfb1c6cd61",
+        "name": "Eshana Setty",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.4,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "3577edc0-bea1-496e-b31a-6f7adab0ddee",
+        "name": "Nikita Shankar",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "typescript",
+            "microservices"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.7,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "88f40164-17ba-4f10-a617-d438d0331fdd",
+        "name": "Vasana Anne",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.9,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "6c3405ad-1387-4a53-81a4-f20ac999c96d",
+        "name": "Charan Baria",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.9,
+        "reliability_score": 94
+    },
+    {
+        "user_id": "96a33ea4-727b-4a0c-86c1-c1e263891687",
+        "name": "Oni Bumb",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow",
+            "api"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.8,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "2434afa7-c99a-42b6-8f12-459760fd5107",
+        "name": "Jeremiah Bumb",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "typescript",
+            "microservices"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.9,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "96a4e267-6307-4d9a-9196-1bb549e8b53c",
+        "name": "Jonathan Khatri",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.7,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "6ac4e87c-7a99-4ac0-94a3-5d861aa4d872",
+        "name": "Aarini Bali",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 7,
+        "avg_quality_score": 3.9,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "16c0922f-a51f-40d9-adff-a9a825c595ea",
+        "name": "Hredhaan Dyal",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "f1dd43af-9f93-4bda-9c8d-98f7a06c1378",
+        "name": "Zaid Soman",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "typescript",
+            "microservices"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.8,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "c413f506-c429-483f-9917-9380aa00fb52",
+        "name": "Mitesh Tank",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 10,
+        "avg_quality_score": 4.1,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "c1cf5dbb-8bcc-488d-98a7-6f034e06d5cd",
+        "name": "Rishi Balasubramanian",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "vue",
+            "express",
+            "node",
+            "react",
+            "mysql",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.1,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "6e71f3e0-c96e-4fef-b999-d4094dfbd28c",
+        "name": "Ojasvi Jain",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "ci/cd",
+            "angular",
+            "flask",
+            "express",
+            "python",
+            "react",
+            "node",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.4,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "d0d46389-b5aa-4ac1-b81f-0a0773b03b25",
+        "name": "Lajita Dasgupta",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "postgresql",
+            "angular",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "microservices",
+            "html",
+            "sql",
+            "typescript",
+            "api",
+            "mongodb"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.4,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "52f35874-c4f1-460a-9ae9-e2a402e60bbf",
+        "name": "Chaitaly Hayre",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "docker",
+            "vue",
+            "express",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.8,
+        "reliability_score": 66
+    },
+    {
+        "user_id": "e7d96ac8-4c56-4293-860b-e4c8e501f1af",
+        "name": "Anika Ramesh",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "express",
+            "react",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.5,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "70693145-9985-4efb-bbf6-b5f1a5e4977f",
+        "name": "Vasana Tella",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "vue",
+            "express",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.6,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "f486b7b4-beaa-47d7-9dfd-fc9e59ea8982",
+        "name": "Watika Johal",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "ci/cd",
+            "angular",
+            "flask",
+            "express",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "rest",
+            "redis",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.1,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "d60c1289-689f-49b7-bf9b-b169013919b6",
+        "name": "Forum Naik",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "docker",
+            "vue",
+            "express",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 10,
+        "avg_quality_score": 3.5,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "c1c78661-899c-4a9e-b35e-c4c48ae043ce",
+        "name": "Neel Dewan",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "express",
+            "react",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.1,
+        "reliability_score": 94
+    },
+    {
+        "user_id": "fb4155de-a96f-4f46-a883-655a9a9698ad",
+        "name": "Om Sarkar",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "vue",
+            "express",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.2,
+        "reliability_score": 73
+    },
+    {
+        "user_id": "a8e50e22-f255-43e0-b33a-ce30ecc6a790",
+        "name": "Priya Ramaswamy",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "ci/cd",
+            "angular",
+            "flask",
+            "express",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "rest",
+            "redis",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.2,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "9c80fc01-82d2-435e-b396-95686961c373",
+        "name": "Aarna Dass",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "docker",
+            "vue",
+            "express",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.4,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "8a87db6b-920b-47b9-bdff-2e7301f66fe9",
+        "name": "Peter Som",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "express",
+            "react",
+            "node",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.5,
+        "reliability_score": 97
+    },
+    {
+        "user_id": "fa15516c-c8e2-4082-ace7-8d1854715b80",
+        "name": "Turvi Natt",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "vue",
+            "express",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.6,
+        "reliability_score": 66
+    },
+    {
+        "user_id": "fdd5aec0-9d9d-4b6a-a331-b393aeca210b",
+        "name": "Jeet Rama",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "ci/cd",
+            "angular",
+            "flask",
+            "express",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "rest",
+            "redis",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.1,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "5f4fbcec-4f07-4a7e-91b3-da56c5a511a0",
+        "name": "Michael Kibe",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "docker",
+            "vue",
+            "express",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.4,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "f93dde0b-2258-4a21-b0db-da7e5823e653",
+        "name": "Ekani Gala",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.0,
+        "reliability_score": 73
+    },
+    {
+        "user_id": "df05ec66-c092-4244-8b17-5a4cca307ee3",
+        "name": "Vedhika Kapur",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "api",
+            "typescript",
+            "react"
+        ],
+        "experience": 9,
+        "avg_quality_score": 4.3,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "a627bc98-458f-4834-8665-58a77d67986b",
+        "name": "Yoshita Solanki",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.7,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "d1317725-2f0c-4ab3-947a-e6c9fa03deae",
+        "name": "Quincy Sen",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "typescript",
+            "react"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.8,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "84f070c1-5bef-4ba5-bdeb-143c0f3aec8d",
+        "name": "Liam Borra",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.7,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "43937f87-8643-41a1-b9e5-37c87ae15cef",
+        "name": "Gaurang Baria",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "api",
+            "typescript",
+            "react"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.7,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "5a322006-f4bf-4afb-bfa1-b0462e6df93c",
+        "name": "Hiral Rastogi",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 5,
+        "avg_quality_score": 5.0,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "4db9fc08-0e20-4fb3-b7dc-06ef11c710b9",
+        "name": "Anmol Bail",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "typescript",
+            "react"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.0,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "ed9e5739-45d1-45ed-8a25-178a338e1de1",
+        "name": "Gautam Sane",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.3,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "d2dcf0ff-dc75-4d24-a1f2-74ca26171818",
+        "name": "Gautam Subramanian",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "api",
+            "typescript",
+            "react"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.6,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "48881d8c-f5d1-4c60-a4fc-08f25849afd7",
+        "name": "Charles Kumar",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.4,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "3eefabbe-571c-4695-ac41-1ddb0be50241",
+        "name": "Ekani Subramanian",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "typescript",
+            "react"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.9,
+        "reliability_score": 71
+    },
+    {
+        "user_id": "869b2e50-9b93-4c4d-925f-45e2333aa3ef",
+        "name": "Chasmum Ghosh",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.7,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "a9c0f528-dede-498c-b0ac-71f934bf0181",
+        "name": "Reva Singh",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "api",
+            "typescript",
+            "react"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.7,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "f2b616fb-6430-4b1d-8e89-b2ee2f2005cd",
+        "name": "Omaja Bhatia",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "typescript",
+            "firebase"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.9,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "b0e76275-3fd8-45ae-b5d0-7b9f0df82565",
+        "name": "Vyanjana Saran",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "typescript",
+            "react"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.8,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "b7e23f2b-ce4e-4ed1-bf47-8cdc33f500d1",
+        "name": "Charles Konda",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.6,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "a01ece6e-5a8b-4a30-b5c5-a8aa37b8cce4",
+        "name": "Oeshi Divan",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript",
+            "docker"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "56697fc8-1d60-4407-9c94-f18b1ef183c8",
+        "name": "Lohit Barman",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.8,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "c2f89533-06b3-443a-8f92-0d8bed333c1b",
+        "name": "Maanav Sen",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.3,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "eea6d346-2f74-4174-9d51-c56036587d9f",
+        "name": "Aarav Bedi",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.8,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "f79fa9dc-99e7-408a-b6e8-588b635d64fb",
+        "name": "Leena Pal",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript",
+            "docker"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.2,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "38ff5259-dc9f-4d51-a009-e202879ab631",
+        "name": "Darsh Pillay",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.2,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "1cba00c2-b1ee-4eb6-91b0-bf044dcf2e5b",
+        "name": "Rishi Desai",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 5.0,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "5edf1ca8-9d56-44e4-9d61-145acd60cf6e",
+        "name": "Vritti Sodhi",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.5,
+        "reliability_score": 94
+    },
+    {
+        "user_id": "673e4ab9-d0fc-4037-bafd-182ce4a36c90",
+        "name": "Chaaya Johal",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript",
+            "docker"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.9,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "204be0f7-469d-477a-859c-87ad159048b4",
+        "name": "Janani Biswas",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.3,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "9cf25b15-1e55-4724-b4a2-3d6b8bc5e1be",
+        "name": "Nidhi Mutti",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.1,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "41bdfde8-55b3-481e-bbba-10c23b574fc0",
+        "name": "Ladli Dey",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.7,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "4027e48a-af8a-4333-ae60-356b430b5370",
+        "name": "Jagdish Deep",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "aws",
+            "typescript",
+            "microservices",
+            "kubernetes"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.6,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "10d2db1e-5243-497e-b371-d3fa85ca08af",
+        "name": "Omya Bhattacharyya",
+        "role": "Cloud Engineer",
+        "domain": "ml",
+        "skills": [
+            "aws",
+            "typescript",
+            "azure",
+            "machine learning"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.5,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "0d78715c-f21b-48a8-a7d4-c1a2eb9b44b9",
+        "name": "Anamika Dara",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "docker",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.0,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "3ef1507b-7a65-427b-a941-f13029faf682",
+        "name": "Caleb Badami",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.6,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "74d5dbc2-2091-4939-b417-4bd68ca960d4",
+        "name": "Sachi Venkatesh",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "aws",
+            "typescript",
+            "microservices",
+            "kubernetes"
+        ],
+        "experience": 12,
+        "avg_quality_score": 4.2,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "2e19ea3c-f6f4-476f-bfd6-23177aa87999",
+        "name": "Bahadurjit Chadha",
+        "role": "Cloud Engineer",
+        "domain": "ml",
+        "skills": [
+            "aws",
+            "typescript",
+            "azure",
+            "machine learning"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "109dffb4-70aa-44c7-9c6e-310f33550fa3",
+        "name": "Tejas Bhatti",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "docker",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 12,
+        "avg_quality_score": 4.8,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "3c7d0ca9-9bab-4783-9cfd-1398c4a77827",
+        "name": "Faraj Radhakrishnan",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.3,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "a10c3c6c-b01a-4834-9472-ea13ce9cbdd9",
+        "name": "Saumya Sinha",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "aws",
+            "typescript",
+            "microservices",
+            "kubernetes"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.3,
+        "reliability_score": 73
+    },
+    {
+        "user_id": "13429981-645e-4696-8000-bd066581b76e",
+        "name": "Indrajit Bobal",
+        "role": "Cloud Engineer",
+        "domain": "ml",
+        "skills": [
+            "aws",
+            "typescript",
+            "azure",
+            "machine learning"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.8,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "2ab57b72-9938-4b7a-8fd9-d1b194d610b0",
+        "name": "Faris Rajan",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "git",
+            "docker",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.0,
+        "reliability_score": 66
+    },
+    {
+        "user_id": "0dd2325a-3fe4-496f-a3d1-a0c6fc62a49a",
+        "name": "Ikshita Purohit",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.0,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "64cad8d8-d04a-4941-9259-aa08d9feba3f",
+        "name": "Wridesh Chand",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.4,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "faddddd5-2d80-4233-b8d3-56a699a47caf",
+        "name": "Yatan Loyal",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "next.js",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 10,
+        "avg_quality_score": 4.4,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "08ceed30-11e1-4906-9538-4c665d8601ee",
+        "name": "Kamya Bava",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.1,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "02f3edb1-c7a6-4b68-8738-c23c9e45c834",
+        "name": "Hardik Goswami",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.3,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "8f2aae49-5dbe-4c28-ad9c-87a747d4cbbf",
+        "name": "Chasmum Taneja",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.1,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "fbedcabf-de80-4ba9-953d-a2320b64e031",
+        "name": "Avni Narasimhan",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "next.js",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.7,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "e9df0c54-e832-48d9-aeff-83f04a2b3aad",
+        "name": "Oeshi Seshadri",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.7,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "394e154d-ea12-422a-bdb2-65684ed4042b",
+        "name": "Parth Mahajan",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.8,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "7b912450-aaf6-4e76-96fc-b2bcc9beab44",
+        "name": "Chaman Borah",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "fe66e5c9-6618-442a-9ce4-b80f8dd99e8a",
+        "name": "Gayathri Ganesh",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "next.js",
+            "react",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 10,
+        "avg_quality_score": 3.9,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "68609206-db0b-446f-b118-f09ee8e0c2a0",
+        "name": "Kiaan Master",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "javascript",
+            "typescript",
+            "html"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.3,
+        "reliability_score": 66
+    },
+    {
+        "user_id": "0e7df8d3-041f-453f-aac8-cf163fb9859a",
+        "name": "William Nazareth",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.7,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "b0f1e5a0-d6c5-4cf5-9354-33636751573d",
+        "name": "Devansh Wagle",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "express",
+            "azure",
+            "node",
+            "rest",
+            "aws",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.5,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "1308dff6-34ed-4e7c-8579-23991882e3c9",
+        "name": "Dakshesh Panchal",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "ci/cd",
+            "flask",
+            "python",
+            "graphql",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.7,
+        "reliability_score": 73
+    },
+    {
+        "user_id": "2047aad8-f7bd-4ba3-be4d-0501c003596a",
+        "name": "Laksh Bumb",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.3,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "e69ddb73-345a-4e6b-9194-7ce816977225",
+        "name": "Vrinda Bal",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.1,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "226f7153-93b5-491d-916c-cd57c3b5a228",
+        "name": "Upkaar Dewan",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "express",
+            "azure",
+            "node",
+            "rest",
+            "aws",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.7,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "16f4be55-c8b0-49fe-8b0e-68fc490d88f7",
+        "name": "Amruta Mangat",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "ci/cd",
+            "flask",
+            "python",
+            "graphql",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.1,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "871a55b7-bbb0-489c-9040-02c8540cc980",
+        "name": "Tara Chokshi",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.2,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "47765a14-c2f7-48b4-99d1-e15ad6ef4b65",
+        "name": "Chanchal Mody",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.2,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "3c291cc7-cf34-4ead-8f08-68d7f23650b5",
+        "name": "Rachit Vohra",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "express",
+            "azure",
+            "node",
+            "rest",
+            "aws",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.1,
+        "reliability_score": 66
+    },
+    {
+        "user_id": "3948c7e2-9351-49e2-95e5-5d4d5392a41e",
+        "name": "Pallavi Kata",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "ci/cd",
+            "flask",
+            "python",
+            "graphql",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.0,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "d9b891a4-f10a-46b1-9476-5e965d8036d6",
+        "name": "Wriddhish Chana",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.7,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "a8bd6c33-4b05-4f64-91ba-b35e306a1a58",
+        "name": "Ati Tak",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 6,
+        "avg_quality_score": 3.5,
+        "reliability_score": 71
+    },
+    {
+        "user_id": "ad708624-ce50-438e-b9aa-3f194afeab42",
+        "name": "Vincent Behl",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "express",
+            "azure",
+            "node",
+            "rest",
+            "aws",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.0,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "476c8803-732b-455d-876c-70c92835519e",
+        "name": "Tanay Bandi",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "ci/cd",
+            "flask",
+            "python",
+            "graphql",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.0,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "cc773615-5e4c-4dd2-9c00-a325a8bf8399",
+        "name": "Vedant Ramanathan",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.3,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "1e9e6509-bef2-49cf-bfa6-b95b333c54ec",
+        "name": "Hamsini Kata",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.6,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "6ca2aa44-d3d7-4395-92c6-b1297922ffd3",
+        "name": "Anya Uppal",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.0,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "4bc2449c-bf40-4b5b-a5ab-d135bde62d54",
+        "name": "Vrishti Madan",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.6,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "f3deb47f-1d14-4fb3-a078-046243ebe762",
+        "name": "Arunima Buch",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.9,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "42d46407-13f1-450f-8f9b-12d43b170815",
+        "name": "Nitesh Char",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 8,
+        "avg_quality_score": 4.1,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "89317f82-cd3d-4c26-b01a-f0a029b1345d",
+        "name": "Oliver Boase",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.0,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "0ca6ba7d-9fd1-4df3-b9f9-5e1e9b98eab6",
+        "name": "Warinder Virk",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.8,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "e29fb668-b680-422a-a477-2fdb5b7dfe9c",
+        "name": "Xiti Nagar",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 10,
+        "avg_quality_score": 3.1,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "79475f34-3d7d-4b71-a5ef-aafa65bd4a7a",
+        "name": "Radhika Gupta",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 9,
+        "avg_quality_score": 4.2,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "e9c41162-1538-4ffb-b42f-8d51e36ec478",
+        "name": "Ayushman Borde",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.6,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "e3ccc4eb-e4eb-4b5f-a97f-0e6cb399fffb",
+        "name": "Jackson Toor",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.8,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "54806f02-0259-441c-9db5-ce48e5fb40d7",
+        "name": "Adya Sodhi",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.6,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "2850a2fc-705b-445d-9df0-9723f7521e50",
+        "name": "Bishakha Prasad",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "docker",
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow",
+            "kubernetes"
+        ],
+        "experience": 9,
+        "avg_quality_score": 3.0,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "5a436dea-8296-4924-8460-6b8d596ad27e",
+        "name": "Yoshita Raja",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.8,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "0d677c70-fbe8-4358-9ce5-cbfcc1558134",
+        "name": "Amruta Bedi",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.1,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "a5d061b4-6460-4217-8a6e-3516d11d1b4e",
+        "name": "Gunbir Rana",
+        "role": "Machine Learning Engineer",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.8,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "99aee3c8-8862-43af-af77-64932f8c90bf",
+        "name": "Krishna Nayak",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.5,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "8884eb26-df87-47ca-95d5-84be894cd39e",
+        "name": "Daksh Saxena",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "c196779a-c92d-440d-8130-3a6be4ac20df",
+        "name": "Lohit Memon",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "git",
+            "azure",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.8,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "d76b17ed-cb10-40f0-9ca2-82454a107908",
+        "name": "Bhanumati Salvi",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 9,
+        "avg_quality_score": 3.6,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "6a6dc802-f074-4144-8afe-d15e61660f13",
+        "name": "Frederick Issac",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.5,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "7c5a8e6c-eebb-4022-a0a0-c27689225415",
+        "name": "Oviya Kapur",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.9,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "71e2b5c9-8504-4dd6-aea9-783284a4ad56",
+        "name": "Hema Nigam",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "git",
+            "azure",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.4,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "9388f28a-8c4e-4d52-a4a5-7a6ec12398d5",
+        "name": "Simon Manda",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.1,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "0c811eb8-59c8-41b0-9886-f437d048293b",
+        "name": "Chakrika Batta",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.4,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "b6aa27e2-d166-4cb1-995e-aa82fb35f6cc",
+        "name": "Azad Goswami",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.3,
+        "reliability_score": 71
+    },
+    {
+        "user_id": "922a9a70-85bc-4525-8b88-b50a62909d02",
+        "name": "Tarak Parekh",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "git",
+            "azure",
+            "aws",
+            "typescript",
+            "api"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.6,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "37b7a842-c2d5-47ef-9af4-7f142abac1b0",
+        "name": "Ryan Bhat",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.2,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "c322d32d-0a17-46f7-a061-3101182eb49f",
+        "name": "Kai Saran",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.1,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "73679e55-7987-4a38-9aa4-d6e95fb91239",
+        "name": "Indali Sengupta",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.1,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "beb7a4f8-149c-40a0-875a-77af6d0b36ce",
+        "name": "Upkaar Devan",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.7,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "f55ac7d0-86ee-442f-a0ea-4edcb1953896",
+        "name": "Elijah Dewan",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 1,
+        "avg_quality_score": 5.0,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "d1a4e37d-8075-4f69-bfce-a33faa585771",
+        "name": "Oeshi Jhaveri",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.1,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "cb54af48-fb44-4236-960c-4c3c2c25bf13",
+        "name": "Anjali Khanna",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.2,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "ab02324d-dde2-4315-a646-fa5d9ed36f38",
+        "name": "Aarini Sandal",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 12,
+        "avg_quality_score": 4.3,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "c008a312-6592-431e-8380-734e15eac05c",
+        "name": "Jairaj Cheema",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 7,
+        "avg_quality_score": 3.9,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "16e21adc-0365-4922-97fa-d783e7acce5b",
+        "name": "Theodore Mand",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.9,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "a2dbe1f1-dcc1-47a6-8f99-3d9b0524dfce",
+        "name": "David Kapur",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.1,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "9280b578-748e-4f3f-a05e-2d3dc55ac25a",
+        "name": "Saumya Madan",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.7,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "448dadf8-6ae2-4ddd-8c9e-b81e9f44f66d",
+        "name": "Vyanjana Sami",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.9,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "e5c15554-13ac-4b85-b151-efe11b66364f",
+        "name": "Ranveer Khalsa",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.9,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "6647662f-791a-4080-8958-e5ecf5483917",
+        "name": "Yashawini Mallick",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "tensorflow",
+            "machine learning",
+            "python",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.3,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "a5619968-88a6-4581-b1c1-7fc8af97af6f",
+        "name": "Chaitanya Kibe",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.5,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "ec292ae2-37f3-4d2e-8b7f-3749a5854f0a",
+        "name": "Ekantika Shere",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "sql",
+            "tensorflow"
+        ],
+        "experience": 10,
+        "avg_quality_score": 3.9,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "3e7a472a-ee22-4e42-88e9-3d4edbc6e6a9",
+        "name": "Damini Nayar",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "rest",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.2,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "39ea7356-d0fe-460f-9c62-2bc0b5ff4b4b",
+        "name": "Lajita Chatterjee",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.5,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "71d90204-0741-4b0d-9a9e-a5ead8b7b91b",
+        "name": "Rajata Mandal",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "graphql",
+            "rest",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.7,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "e1189102-710c-4b69-81e2-b318407d4f85",
+        "name": "Vinaya Dua",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.6,
+        "reliability_score": 97
+    },
+    {
+        "user_id": "8d3f75be-d9e0-4e16-86dc-6c1d22a22f06",
+        "name": "Wakeeta Subramaniam",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "rest",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.1,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "17f2504c-013a-41c9-a211-701dc3b157ba",
+        "name": "Ekani Handa",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "typescript",
+            "api"
+        ],
+        "experience": 10,
+        "avg_quality_score": 4.8,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "339be34e-b1bb-4a5f-be43-5675d2e31d45",
+        "name": "Dayita Sankaran",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "graphql",
+            "rest",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.6,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "3fb7c601-66af-4e7f-8ae3-66b91be49317",
+        "name": "Mohammed De",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.9,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "fd3d03ff-6c53-44b3-9f5f-83693dc14560",
+        "name": "Peter Raval",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "rest",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.6,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "4136178c-c705-400a-8be2-006421051959",
+        "name": "Atharv Choudhury",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.2,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "58fc02b6-58d3-4551-b329-b723556db786",
+        "name": "Balendra Yohannan",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "graphql",
+            "rest",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.8,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "eea86018-10e3-48be-8836-6f05ad7c18ae",
+        "name": "Dev Kota",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.7,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "1ae028f9-7e90-475a-8d09-ac97fdc73518",
+        "name": "Jeremiah Patla",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "rest",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.5,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "7543e3e3-33e6-42e3-850c-484a4e96d5af",
+        "name": "Luke Sha",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.9,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "9c33ed5e-9113-404a-a461-b7818057b6a9",
+        "name": "Advik Dar",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "graphql",
+            "rest",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.4,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "24155230-42b4-4452-ab4c-31dc0b39806b",
+        "name": "Peter Varma",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.7,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "36dfeaa6-6cee-4c64-8b74-d681c42c234e",
+        "name": "Oni Mani",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "rest",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.1,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "0f0ccd9a-c134-49cc-8c9e-099a85261a9a",
+        "name": "Hemang Grover",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "flask",
+            "python",
+            "spring",
+            "rest",
+            "typescript",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.5,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "beb8f71f-3780-4069-aabb-5a6d34ad781a",
+        "name": "Aahana Ahuja",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "graphql",
+            "rest",
+            "javascript",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.7,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "07db74f0-3ac0-4208-82d3-b24c99fa18c9",
+        "name": "Nachiket Chaudhary",
+        "role": "Backend Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "express",
+            "spring",
+            "node",
+            "python",
+            "javascript",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.6,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "dd62da3f-44bf-48b0-bba5-eaba0f5a81a8",
+        "name": "Advik Wagle",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.8,
+        "reliability_score": 99
+    },
+    {
+        "user_id": "f406293e-2e02-432a-928c-6f449a6494f8",
+        "name": "Max Nair",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.6,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "1b930293-db11-434b-91de-87e35bf55407",
+        "name": "Aarnav Sarna",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.4,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "5f68c097-fe48-44a4-8d2b-f20b95027a9b",
+        "name": "Ijaya Gera",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.9,
+        "reliability_score": 98
+    },
+    {
+        "user_id": "24f6e034-8d6c-4416-a56c-de62d3074833",
+        "name": "Yasti Prashad",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.2,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "81915478-38ea-4d94-8313-59c0125dad2a",
+        "name": "Prisha Dua",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.3,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "868e59e2-2b1c-4f18-ab3f-ad985a39def1",
+        "name": "Wahab Raman",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.9,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "aeaf7684-3f9e-424f-a4f3-b54481e76f1e",
+        "name": "Andrew Balasubramanian",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.2,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "f3bd3bca-080a-496f-b4c9-f682a1780e8f",
+        "name": "Ekansh Anne",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.0,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "81bc9206-eaa9-4637-b4d5-92118bd0914d",
+        "name": "Gagan Mallick",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 10,
+        "avg_quality_score": 3.4,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "151c58b0-92c3-4b69-a48a-c21c645a02dd",
+        "name": "Timothy Naik",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.2,
+        "reliability_score": 91
+    },
+    {
+        "user_id": "48545167-ceda-4764-ada7-767d91a61488",
+        "name": "Tarak Upadhyay",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.1,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "2df742b4-7b4d-4db2-9cfa-d4490e5f1cdf",
+        "name": "Vyanjana Ray",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "api",
+            "redux"
+        ],
+        "experience": 8,
+        "avg_quality_score": 4.4,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "73de8c1f-9899-4299-bdd0-1ae0e0aef74c",
+        "name": "Zilmil Sandal",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.8,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "f80e4280-ee01-4fb9-af69-2928984469ff",
+        "name": "Gaurang Saha",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.6,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "1e991749-34a4-479d-be48-938471305c1a",
+        "name": "Saumya Bali",
+        "role": "Frontend Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "react",
+            "javascript",
+            "typescript",
+            "html",
+            "redux"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.8,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "e83ead6b-1058-483f-bb01-15f4037bd619",
+        "name": "Lila Dora",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "flask",
+            "python",
+            "node",
+            "react",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 8,
+        "avg_quality_score": 4.7,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "8ddcad66-197a-4fc1-bdea-af76868efdc1",
+        "name": "Eesha Basak",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "vue",
+            "python",
+            "azure",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.1,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "ccd5e78f-7884-42a4-bef4-e8e6df912a87",
+        "name": "Rishi Sheth",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "ci/cd",
+            "angular",
+            "flask",
+            "python",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.3,
+        "reliability_score": 97
+    },
+    {
+        "user_id": "6e795703-ed40-407a-bb35-33f2795f7970",
+        "name": "Chaitaly Ganesan",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "node",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 9,
+        "avg_quality_score": 3.1,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "dea6d23a-5536-4c87-8283-cfee00155d63",
+        "name": "Omisha Mody",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "flask",
+            "python",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.0,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "0e7a0f55-2785-40f9-a792-a04b6da2c921",
+        "name": "Reva Bajwa",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "redis",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.3,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "1bf9ab56-541f-4758-aa6a-8185014b607d",
+        "name": "Vritti Mody",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "angular",
+            "python",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "aws",
+            "microservices",
+            "html",
+            "sql",
+            "typescript",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.6,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "f6f730ea-9470-435f-ac77-82ccafea6b57",
+        "name": "Jhalak Bhavsar",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "ci/cd",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.4,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "11036650-1afd-4d1b-bf20-d38ea5a859e1",
+        "name": "Pavani Krishna",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "flask",
+            "python",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "microservices",
+            "html",
+            "sql",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.3,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "ddedd931-24e2-4f76-a09c-3663ad68e6db",
+        "name": "Gauri Devan",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.0,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "3823bf13-c36c-46c7-bb5c-8b5b9069b4ba",
+        "name": "Jack Viswanathan",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "angular",
+            "python",
+            "azure",
+            "react",
+            "node",
+            "graphql",
+            "javascript",
+            "aws",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.8,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "a595eb22-4605-45b1-b970-e689aa392820",
+        "name": "Nikita Tella",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "node",
+            "javascript",
+            "typescript",
+            "html",
+            "sql"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.9,
+        "reliability_score": 97
+    },
+    {
+        "user_id": "9491467f-83d2-4313-b58a-643764b6a6a0",
+        "name": "Pahal Chaudhuri",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "angular",
+            "flask",
+            "python",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.0,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "b7d4d6a8-84e9-412f-92d8-4915c32e0a2e",
+        "name": "Chaitanya Wable",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "redis",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.8,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "830169a8-aea5-4c62-bfac-a4de8a1aa2ac",
+        "name": "Nitesh Bhavsar",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "angular",
+            "python",
+            "react",
+            "node",
+            "rest",
+            "javascript",
+            "aws",
+            "microservices",
+            "html",
+            "sql",
+            "typescript",
+            "api"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.6,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "a743b06d-3fb0-454e-a5f8-c9bfacbe5789",
+        "name": "Darika Contractor",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "ci/cd",
+            "vue",
+            "flask",
+            "python",
+            "react",
+            "graphql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.6,
+        "reliability_score": 66
+    },
+    {
+        "user_id": "fcc0c228-1d0a-4d7f-b799-21c63e43b3a1",
+        "name": "Divya Sarin",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "api",
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.5,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "7c6f96fc-7808-454b-820f-83f86ed03693",
+        "name": "Anamika Kannan",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.1,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "6e513342-7670-4c75-9d70-f159a5986233",
+        "name": "Chakradev Savant",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "rest",
+            "api",
+            "typescript",
+            "react"
+        ],
+        "experience": 12,
+        "avg_quality_score": 3.8,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "51a24dd3-e5a7-4a1b-987c-dc9ed21639d1",
+        "name": "Lajita Gour",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.4,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "546a6a95-d093-4fb7-9c2f-278421d5d019",
+        "name": "Oliver Sodhi",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.4,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "637c58a9-c2ac-43b3-b41c-f659f6d948ab",
+        "name": "Rajata Dua",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "typescript",
+            "react"
+        ],
+        "experience": 7,
+        "avg_quality_score": 4.7,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "4717a93e-38e1-46f6-9c65-9d287207b9ff",
+        "name": "Dominic Borah",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "api",
+            "typescript"
+        ],
+        "experience": 12,
+        "avg_quality_score": 4.2,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "ce84e32d-a431-4158-94b3-9eddc5995cd7",
+        "name": "Turvi Mitter",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "api",
+            "typescript",
+            "react"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.0,
+        "reliability_score": 82
+    },
+    {
+        "user_id": "8e06242a-0c9a-4282-b8d1-1f3faef0381a",
+        "name": "Leela Balay",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 88
+    },
+    {
+        "user_id": "aa7347b9-7307-440d-b963-b4ff08ed3cf5",
+        "name": "Robert Sangha",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.1,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "f03836d1-b990-4a7d-b2d7-215d3c85c826",
+        "name": "Vrishti Saran",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "rest",
+            "api",
+            "typescript",
+            "react"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.3,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "89c0afda-0371-49bb-b8a8-221955596a44",
+        "name": "Bhanumati Dixit",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.0,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "8374dddb-75a0-4c7a-b03f-6ecf10e94168",
+        "name": "Adweta Mistry",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "typescript"
+        ],
+        "experience": 6,
+        "avg_quality_score": 3.8,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "1c050832-b899-4102-97db-b0a16427db6f",
+        "name": "Dhriti Bansal",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "frontend",
+        "skills": [
+            "typescript",
+            "react"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.6,
+        "reliability_score": 69
+    },
+    {
+        "user_id": "4c006749-d39a-4494-9332-10f554430fc5",
+        "name": "Indrajit Pau",
+        "role": "Mobile App Developer (iOS/Android)",
+        "domain": "general",
+        "skills": [
+            "rest",
+            "api",
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 5.0,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "c4b37146-5587-4e57-a802-bc0a074442c5",
+        "name": "Vinaya Kohli",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.7,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "52ad0d57-ce87-4d15-8b5b-de814a5143d4",
+        "name": "Isaac Balasubramanian",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "docker",
+            "fastapi",
+            "python",
+            "machine learning",
+            "typescript",
+            "tensorflow",
+            "kubernetes",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.3,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "eb70ae3e-d0a2-4e52-a469-4ea9cb8ccff6",
+        "name": "Chavvi Maharaj",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "fastapi",
+            "python",
+            "microservices",
+            "sql",
+            "typescript",
+            "api"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.1,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "add42dae-70fd-4fbe-9095-dc11090df5e6",
+        "name": "Wridesh Varma",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "ci/cd",
+            "flask",
+            "python",
+            "rest",
+            "redis",
+            "typescript",
+            "api"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.1,
+        "reliability_score": 93
+    },
+    {
+        "user_id": "f5177a2a-245f-4058-a9aa-3735ac7f502e",
+        "name": "Laban Goswami",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.0,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "39d20421-d007-4d7e-bb1c-75486085c871",
+        "name": "Matthew Chowdhury",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "graphql",
+            "rest",
+            "microservices",
+            "sql",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.7,
+        "reliability_score": 70
+    },
+    {
+        "user_id": "a76c53a6-191c-4bd7-9412-d73a9f22d02d",
+        "name": "Lakshmi Pau",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.8,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "53afeb35-679f-40ab-a269-a325de55833b",
+        "name": "Isaiah Kar",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.6,
+        "reliability_score": 87
+    },
+    {
+        "user_id": "e3179045-4ecb-47cb-977c-83c163a1f489",
+        "name": "Meera Dora",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.7,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "5cf49c75-a3d0-43d1-a927-e5491d49081a",
+        "name": "Maanas Manda",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "rest",
+            "microservices",
+            "sql",
+            "typescript",
+            "api"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.9,
+        "reliability_score": 74
+    },
+    {
+        "user_id": "27eb318b-40c2-46a5-8f5d-d2cf2e52486e",
+        "name": "Madhav Rajan",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.2,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "85856ae9-f6d9-409d-a3b9-ece4f1029c1f",
+        "name": "Fitan Dayal",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "fastapi",
+            "python",
+            "rest",
+            "microservices",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "38156190-8714-49f2-9568-78aa1cfb57e9",
+        "name": "Divya Bir",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.6,
+        "reliability_score": 85
+    },
+    {
+        "user_id": "c5b9c26a-a22b-439c-aeba-452554a39ab3",
+        "name": "Veda Basu",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "flask",
+            "python",
+            "rest",
+            "microservices",
+            "sql",
+            "typescript",
+            "api"
+        ],
+        "experience": 8,
+        "avg_quality_score": 3.1,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "d2699ee9-c8be-4db8-8395-8931972909fd",
+        "name": "Tristan Divan",
+        "role": "Python Developer",
+        "domain": "backend",
+        "skills": [
+            "django",
+            "numpy",
+            "flask",
+            "python",
+            "pandas",
+            "rest",
+            "machine learning",
+            "typescript",
+            "api"
+        ],
+        "experience": 1,
+        "avg_quality_score": 3.1,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "016446ed-cf11-4879-aa47-76bfbce7b477",
+        "name": "Barkha Kata",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.8,
+        "reliability_score": 68
+    },
+    {
+        "user_id": "e69b8ec9-b7a1-4886-be30-94802cba649a",
+        "name": "Siddharth Keer",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.2,
+        "reliability_score": 75
+    },
+    {
+        "user_id": "d7254538-2b18-43b7-bb21-f5abc27d5c7e",
+        "name": "Daksh Babu",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "typescript",
+            "machine learning",
+            "python",
+            "pandas"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.5,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "4969bd00-7810-4154-b376-f0900b2dcefd",
+        "name": "Logan Jain",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.8,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "9c703650-e73d-47de-973f-793be9cdd0d7",
+        "name": "Netra Narula",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.8,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "609f9654-810e-4fbc-ac7c-67f9609b4ac5",
+        "name": "Vansha Krishnamurthy",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.8,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "e2cf5a5e-db19-473b-9524-e9d250e8b91e",
+        "name": "Anita Kibe",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.1,
+        "reliability_score": 79
+    },
+    {
+        "user_id": "371c8bd4-633f-424e-b769-2ad8582e931c",
+        "name": "Faqid Mahal",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.1,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "7482ef1d-358e-43e0-a7fb-9b0563e456da",
+        "name": "Faris Salvi",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.5,
+        "reliability_score": 100
+    },
+    {
+        "user_id": "b2270290-9731-4a9e-9ead-0fb87f721580",
+        "name": "Anita Saxena",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "typescript",
+            "machine learning",
+            "python",
+            "pandas"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.2,
+        "reliability_score": 92
+    },
+    {
+        "user_id": "845ed385-75f1-459c-997e-a93c259d4c3a",
+        "name": "Jackson Bhasin",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.2,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "1aeaac6f-8ac9-458c-b95c-1d9205072134",
+        "name": "Nikita Dara",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 6,
+        "avg_quality_score": 4.3,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "4d788338-fa59-49af-9045-ba58eff7b1ea",
+        "name": "Pranit Sahni",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "machine learning",
+            "typescript",
+            "pytorch",
+            "tensorflow"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.2,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "933b4e9a-6e8a-4e97-9a98-6a356876872a",
+        "name": "Sara Ramaswamy",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript",
+            "tensorflow"
+        ],
+        "experience": 2,
+        "avg_quality_score": 4.5,
+        "reliability_score": 96
+    },
+    {
+        "user_id": "2d8fe931-0c74-4326-b1d3-2942705802fb",
+        "name": "Amrita Sami",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.3,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "067bf963-8a4e-4387-8a57-eefda8549300",
+        "name": "Gavin Sanghvi",
+        "role": "Data Scientist",
+        "domain": "ml",
+        "skills": [
+            "numpy",
+            "python",
+            "pandas",
+            "machine learning",
+            "typescript"
+        ],
+        "experience": 9,
+        "avg_quality_score": 3.2,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "69074312-8c5e-4a0f-82aa-19d1ddd8eb33",
+        "name": "Ekapad Randhawa",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript"
+        ],
+        "experience": 4,
+        "avg_quality_score": 5.0,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "f19e7243-75c5-44b4-bdd8-4f0f03a5ff76",
+        "name": "Urishilla Ramachandran",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "docker",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 5,
+        "avg_quality_score": 4.5,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "db7b9e77-3e2b-43fe-a1f8-c2c37b197758",
+        "name": "Yahvi Bava",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "gcp",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.3,
+        "reliability_score": 84
+    },
+    {
+        "user_id": "5df93aa5-cb01-497d-a331-a99090adcdeb",
+        "name": "Ekani Tank",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "aws",
+            "typescript",
+            "azure",
+            "gcp"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.1,
+        "reliability_score": 76
+    },
+    {
+        "user_id": "80a20b40-8912-4cb3-a7dc-fed094d41bae",
+        "name": "Xalak Mane",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "gcp",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.4,
+        "reliability_score": 78
+    },
+    {
+        "user_id": "6c364605-11b5-4647-8c80-b20430408ef0",
+        "name": "Upkaar Sankaran",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 4,
+        "avg_quality_score": 4.0,
+        "reliability_score": 77
+    },
+    {
+        "user_id": "7aac4e73-ff9c-4804-8a7b-4fa38e7eac14",
+        "name": "Hema Malhotra",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "gcp",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 0,
+        "avg_quality_score": 4.6,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "47a49ab8-77ac-4616-bef5-ffa34309295d",
+        "name": "Bimala Pandey",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "aws",
+            "typescript",
+            "azure",
+            "gcp"
+        ],
+        "experience": 11,
+        "avg_quality_score": 3.4,
+        "reliability_score": 95
+    },
+    {
+        "user_id": "a23800b6-66e9-4f76-ac3e-70019a35da34",
+        "name": "Samarth Rattan",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "gcp",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript"
+        ],
+        "experience": 0,
+        "avg_quality_score": 3.5,
+        "reliability_score": 72
+    },
+    {
+        "user_id": "16d4b7fb-e61a-46c2-a761-b2e36465e729",
+        "name": "Tripti Sha",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.8,
+        "reliability_score": 83
+    },
+    {
+        "user_id": "beb39223-a700-4673-9c86-ef584981c539",
+        "name": "Jonathan Hayre",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "gcp",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 2,
+        "avg_quality_score": 3.9,
+        "reliability_score": 67
+    },
+    {
+        "user_id": "e42b286d-1a5e-4133-8fc9-e80b3d079251",
+        "name": "Nihal Gara",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "aws",
+            "typescript",
+            "azure",
+            "gcp"
+        ],
+        "experience": 3,
+        "avg_quality_score": 3.6,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "8b10d0ca-0e50-47d6-8ae5-ddb2d07a3e25",
+        "name": "Urvi Chand",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "gcp",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.8,
+        "reliability_score": 86
+    },
+    {
+        "user_id": "1dca0ef7-867d-4e84-a5eb-98baa7d661eb",
+        "name": "Samesh Narula",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "ci/cd",
+            "gcp",
+            "azure",
+            "aws",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.4,
+        "reliability_score": 80
+    },
+    {
+        "user_id": "f290d0c5-6c93-4f01-ba1a-520d2ae462a8",
+        "name": "Chandresh Sule",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "gcp",
+            "azure",
+            "aws",
+            "microservices",
+            "typescript",
+            "kubernetes"
+        ],
+        "experience": 4,
+        "avg_quality_score": 3.9,
+        "reliability_score": 65
+    },
+    {
+        "user_id": "fab363e7-039a-4edf-a47f-ec7517d823b5",
+        "name": "Aditya Dubey",
+        "role": "Cloud Engineer",
+        "domain": "devops",
+        "skills": [
+            "aws",
+            "typescript",
+            "azure",
+            "gcp"
+        ],
+        "experience": 1,
+        "avg_quality_score": 4.9,
+        "reliability_score": 90
+    },
+    {
+        "user_id": "a87e10ad-b59b-4a6f-b4e3-91ec96263f38",
+        "name": "Ucchal Sibal",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "postgresql",
+            "vue",
+            "flask",
+            "express",
+            "react",
+            "node",
+            "mysql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 11,
+        "avg_quality_score": 4.3,
+        "reliability_score": 89
+    },
+    {
+        "user_id": "b93921de-87f5-480b-aa3c-fbba5a56979a",
+        "name": "Jacob Bakshi",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "django",
+            "postgresql",
+            "vue",
+            "angular",
+            "flask",
+            "express",
+            "react",
+            "graphql",
+            "mysql",
+            "rest",
+            "javascript",
+            "typescript",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 3,
+        "avg_quality_score": 4.9,
+        "reliability_score": 81
+    },
+    {
+        "user_id": "713ebcb1-f082-4a75-a32a-a9ee91b24384",
+        "name": "Falguni Zachariah",
+        "role": "Full Stack Developer",
+        "domain": "frontend",
+        "skills": [
+            "css",
+            "django",
+            "postgresql",
+            "angular",
+            "react",
+            "node",
+            "mysql",
+            "javascript",
+            "typescript",
+            "html",
+            "sql",
+            "api",
+            "mongodb"
+        ],
+        "experience": 5,
+        "avg_quality_score": 3.8,
+        "reliability_score": 81
+    }
+]
