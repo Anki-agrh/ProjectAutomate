@@ -1,2 +1,7 @@
 node_modules/
+__pycache__/
+*.py[cod]
+*.pkl
+processed_fixed.json
 .env
+*.log

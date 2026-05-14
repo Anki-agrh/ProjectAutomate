@@ -8,7 +8,7 @@ def seed_database():
 
     # 2. Check if the table is already full so we don't accidentally insert duplicates
     if db.query(Employee).count() > 0:
-        print("⚠️ The database already has employees in it! Skipping insertion.")
+        print("[WARNING] The database already has employees in it! Skipping insertion.")
         db.close()
         return
 
@@ -27,7 +27,7 @@ def seed_database():
     db.commit()
     db.close()
 
-    print(f"✅ SUCCESS! Inserted {len(employees_data)} employees into the database.")
+    print(f"[OK] SUCCESS! Inserted {len(employees_data)} employees into the database.")
 
 if __name__ == "__main__":
     seed_database()

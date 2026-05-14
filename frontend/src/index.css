@@ -4,47 +4,309 @@
   --color-cyber-primary: #6366f1;
   --color-cyber-secondary: #a855f7;
   --color-cyber-accent: #22d3ee;
-  --color-cyber-dark: #0f172a;
+  --color-cyber-dark: #0a0e1a;
   --color-cyber-light: #1e293b;
+  --color-cyber-surface: #111827;
   
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-shimmer: shimmer 2s linear infinite;
 }
 
 @layer base {
+  * {
+    box-sizing: border-box;
+  }
+
   body {
-    @apply bg-cyber-dark text-slate-100 font-sans;
+    @apply bg-cyber-dark text-slate-100;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     scrollbar-gutter: stable;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-/* Custom Scrollbar */
+/* ============================================
+   GLASS MORPHISM SYSTEM
+   ============================================ */
+.glass {
+  @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06];
+}
+
+.glass-card {
+  @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] rounded-2xl;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  @apply bg-white/[0.06] border-white/[0.12];
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.08), 
+              0 0 0 1px rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.glass-card-active {
+  @apply bg-cyber-primary/[0.08] border-cyber-primary/30;
+  box-shadow: 0 0 24px rgba(99, 102, 241, 0.12),
+              0 0 0 1px rgba(99, 102, 241, 0.2);
+}
+
+/* ============================================
+   GRADIENT TEXT
+   ============================================ */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyber-primary via-cyber-secondary to-cyber-accent;
+}
+
+.gradient-text-primary {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyber-primary to-cyber-accent;
+}
+
+/* ============================================
+   NEON GLOW EFFECTS
+   ============================================ */
+.neon-glow-primary {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.3),
+              0 0 45px rgba(99, 102, 241, 0.1);
+}
+
+.neon-glow-accent {
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.3),
+              0 0 45px rgba(34, 211, 238, 0.1);
+}
+
+.neon-glow-secondary {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3),
+              0 0 45px rgba(168, 85, 247, 0.1);
+}
+
+/* ============================================
+   INPUT SYSTEM
+   ============================================ */
+.input-base {
+  @apply w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-3 
+         text-white placeholder-slate-500
+         transition-all duration-300;
+}
+
+.input-base:focus {
+  @apply outline-none border-cyber-primary/50 bg-white/[0.06];
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* ============================================
+   BUTTON SYSTEM
+   ============================================ */
+.btn-primary {
+  @apply bg-gradient-to-r from-cyber-primary to-cyber-secondary 
+         hover:opacity-90 text-white font-bold rounded-xl
+         transition-all duration-300 flex items-center justify-center gap-2;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  @apply bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 
+         font-semibold rounded-xl border border-white/[0.06]
+         transition-all duration-300 flex items-center justify-center gap-2;
+}
+
+.btn-ghost:hover {
+  @apply text-white border-white/[0.12];
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  @apply bg-white/5;
+  background: transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+  @apply bg-white/[0.08] rounded-full;
+  transition: background 0.3s;
 }
 
-.glass {
-  @apply bg-white/5 backdrop-blur-md border border-white/10;
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/[0.16];
 }
 
-.premium-gradient {
-  @apply bg-gradient-to-br from-cyber-primary via-cyber-secondary to-cyber-accent;
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-out forwards;
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 5px rgba(99, 102, 241, 0.2); }
+  to { box-shadow: 0 0 20px rgba(99, 102, 241, 0.4), 0 0 40px rgba(99, 102, 241, 0.1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.5s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+.animate-stagger-1 { animation-delay: 0.05s; }
+.animate-stagger-2 { animation-delay: 0.1s; }
+.animate-stagger-3 { animation-delay: 0.15s; }
+.animate-stagger-4 { animation-delay: 0.2s; }
+.animate-stagger-5 { animation-delay: 0.25s; }
+.animate-stagger-6 { animation-delay: 0.3s; }
+
+/* ============================================
+   LOADING SKELETON
+   ============================================ */
+.skeleton {
+  @apply bg-white/[0.06] rounded-lg;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.03) 25%,
+    rgba(255,255,255,0.08) 50%,
+    rgba(255,255,255,0.03) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ============================================
+   LIGHT MODE OVERRIDES
+   ============================================ */
+[data-theme="light"] body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+[data-theme="light"] .glass {
+  @apply bg-white/80 backdrop-blur-xl border border-slate-200;
+}
+
+[data-theme="light"] .glass-card {
+  @apply bg-white border-slate-200 shadow-sm;
+}
+
+[data-theme="light"] .glass-card-hover:hover {
+  @apply bg-white border-slate-300;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .glass-card-active {
+  @apply bg-indigo-50 border-indigo-200;
+}
+
+[data-theme="light"] .input-base {
+  @apply bg-slate-50 border-slate-200 text-slate-900 placeholder-slate-400;
+}
+
+[data-theme="light"] .input-base:focus {
+  @apply border-indigo-400 bg-white;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+[data-theme="light"] .btn-ghost {
+  @apply bg-slate-50 hover:bg-slate-100 text-slate-600 border-slate-200;
+}
+
+[data-theme="light"] .btn-ghost:hover {
+  @apply text-slate-900 border-slate-300;
+}
+
+[data-theme="light"] .custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full;
+}
+
+[data-theme="light"] .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300;
+}
+
+[data-theme="light"] .skeleton {
+  @apply bg-slate-100;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.03) 25%,
+    rgba(0,0,0,0.06) 50%,
+    rgba(0,0,0,0.03) 75%
+  );
+  background-size: 200% 100%;
+}
+

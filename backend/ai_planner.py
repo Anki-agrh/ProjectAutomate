@@ -13,7 +13,7 @@ client = genai.Client()
 def break_down_project(project_description: str):
     """Sends the project description to Gemini and returns a JSON list of tasks."""
     
-    print(f"🧠 Asking AI to plan: {project_description}...")
+    print(f"[AI] Asking AI to plan: {project_description}...")
 
     prompt = f"""
     You are an expert technical Agile Product Manager. 
@@ -52,7 +52,22 @@ def break_down_project(project_description: str):
     )
     
     # Convert the AI's text response back into an actual Python list/dictionary
-    tasks_data = json.loads(response.text)
+    raw_text = response.text
+    
+    # 🚨 CLEANUP HACK: Remove markdown backticks and 'json' keyword
+    cleaned_text = raw_text.replace("```json", "").replace("```", "").strip()
+    
+    # Ek aur safety check
+    if cleaned_text.startswith("`"):
+        cleaned_text = cleaned_text.strip("`")
+
+    # Ab safely load karo
+    try:
+        tasks_data = json.loads(cleaned_text)
+    except Exception as e:
+        print(f"FAILED TO PARSE JSON. Here is what Gemini sent:\n{raw_text}")
+        raise e
+        
     return tasks_data
 
 # --- Quick Test Block ---
@@ -60,5 +75,5 @@ if __name__ == "__main__":
     test_project = "Build a full-stack e-commerce app with payment integration."
     generated_tasks = break_down_project(test_project)
     
-    print("\n✅ AI Response Received!")
+    print("\n[OK] AI Response Received!")
     print(json.dumps(generated_tasks, indent=4))

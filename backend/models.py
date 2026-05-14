@@ -8,6 +8,8 @@ class Employee(Base):
 
     user_id = Column(String, primary_key=True, index=True)
     name = Column(String, index=True)
+    email = Column(String, unique=True, nullable=True, index=True)
+    hashed_password = Column(String, nullable=True)
     role = Column(String)
     domain = Column(String)
     skills = Column(JSONB) 

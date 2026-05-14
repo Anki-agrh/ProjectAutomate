@@ -7,14 +7,15 @@ from database import engine, SessionLocal
 from ai_planner import break_down_project  #from aiplanner file taking project description
 from assignment import find_best_employee # from assignment file to find best employee for task
 from datetime import datetime, timedelta
-
+from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 import analytics
+import random
 
 # This ensures tables exist
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="APEX Backend API")
+app = FastAPI(title="ScrumMaster Backend API")
 
 # 🚨 NEW: Add CORS so React can talk to us!
 app.add_middleware(
@@ -44,11 +45,16 @@ class ProjectRequest(BaseModel):
 # NEW: The shape of the data for the Time Machine route
 class OverdueCheckRequest(BaseModel):
     simulated_today: str  # e.g., "2026-12-01"
-    project_id: str = None
+    project_id: Optional[str] = None
+
+# AUTH: Login request shape
+class LoginRequest(BaseModel):
+    email: str
+    password: str
 
 @app.get("/")
 def read_root():
-    return {"message": "APEX Backend is running successfully!"}
+    return {"message": "ScrumMaster Backend is running successfully!"}
 
 # ROUTE: Fetch Projects
 @app.get("/projects")
@@ -78,7 +84,13 @@ def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get
     # 2. Get the nested tasks from Gemini
     ai_phases = break_down_project(request.description)
 
-    project_workload_tracker = {}
+    global_workload_tracker = {}
+
+    all_active_tasks = db.query(models.Task).filter(models.Task.status != "Completed").all()
+    for active_task in all_active_tasks:
+        if active_task.assigned_to:
+            global_workload_tracker[active_task.assigned_to] = global_workload_tracker.get(active_task.assigned_to, 0) + 1
+    
     project_hierarchy = []
     
     # ==========================================
@@ -100,11 +112,11 @@ def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get
             needs_fresher = freshers_hired_for_project < 2
             
             # Try to assign to a fresher first
-            best_emp, ai_explanation = find_best_employee(db, task_skills, project_workload_tracker, force_fresher=needs_fresher)
+            best_emp, ai_explanation = find_best_employee(db, task_skills, global_workload_tracker, force_fresher=needs_fresher)
             
             # FALLBACK: What if the task is too hard and no fresher has the skills?
             if not best_emp and needs_fresher:
-                best_emp, ai_explanation = find_best_employee(db, task_skills, project_workload_tracker, force_fresher=False)
+                best_emp, ai_explanation = find_best_employee(db, task_skills, global_workload_tracker, force_fresher=False)
                 if best_emp:
                     ai_explanation = "[FALLBACK: No fresher had the skills] " + ai_explanation
             
@@ -117,7 +129,7 @@ def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get
             emp_name = best_emp.name if best_emp else "Unassigned (Needs Manual Review)"
             
             if emp_id:
-                project_workload_tracker[emp_id] = project_workload_tracker.get(emp_id, 0) + 1
+                global_workload_tracker[emp_id] = global_workload_tracker.get(emp_id, 0) + 1
 
             # ==========================================
             # 🚨 NEW: DEADLINE LOGIC HERE! 🚨
@@ -239,15 +251,20 @@ def manage_overdue_tasks(request: OverdueCheckRequest, db: Session = Depends(get
             continue
             
         emp_reliability = current_emp.reliability_score or 100
+        current_reason = task.assignment_reason or ""
+        extension_count = current_reason.count("[EXTENSION]")
         
-        # LOGIC A: Good Reliability (80 or higher) -> Extend Deadline by 2 days
-        if emp_reliability >= 80:
+        # LOGIC A: Good Reliability (80 or higher) AND Max Extensions NOT reached
+        if emp_reliability >= 80 and extension_count < 2:
+            # 🚨 FIX: Deduct 5 points for missing the deadline, even if they get an extension!
+            current_score = current_emp.reliability_score or 100
+            current_emp.reliability_score = max(0, current_score - 5)
+            
             old_date_obj = datetime.strptime(task.deadline_date, "%Y-%m-%d")
             new_date_obj = old_date_obj + timedelta(days=2)
             task.deadline_date = new_date_obj.strftime("%Y-%m-%d")
             
-            current_reason = task.assignment_reason or ""
-            task.assignment_reason = current_reason + f" | [EXTENSION] Extended by 2 days. {current_emp.name} is highly reliable ({emp_reliability}/100)."
+            task.assignment_reason = current_reason + f" | [EXTENSION] Extended by 2 days. {current_emp.name} is reliable but lost 5 points (New Score: {current_emp.reliability_score}/100)."
             
             actions_taken.append({
                 "task": task.title,
@@ -256,7 +273,7 @@ def manage_overdue_tasks(request: OverdueCheckRequest, db: Session = Depends(get
                 "new_deadline": task.deadline_date
             })
             
-        # LOGIC B: Bad Reliability (Under 80) -> Reassign Task!
+        # LOGIC B: Bad Reliability (Under 80) OR Max Extensions Reached (2) -> Reassign Task!
         else:
             old_emp_name = current_emp.name
 
@@ -272,7 +289,13 @@ def manage_overdue_tasks(request: OverdueCheckRequest, db: Session = Depends(get
             
             if new_emp:
                 task.assigned_to = new_emp.user_id
-                task.assignment_reason = f"[REASSIGNED from {old_emp_name} due to low reliability ({emp_reliability}/100)]. NEW: {new_reason}"
+                
+                if extension_count >= 2:
+                    reason_msg = f"[REASSIGNED from {old_emp_name} because max extensions (2) were reached]"
+                else:
+                    reason_msg = f"[REASSIGNED from {old_emp_name} due to low reliability ({emp_reliability}/100)]"
+                    
+                task.assignment_reason = f"{reason_msg}. NEW: {new_reason}"
                 
                 # Give the new person a fresh 3 days from "today"
                 new_date_obj = datetime.strptime(request.simulated_today, "%Y-%m-%d") + timedelta(days=3)
@@ -332,7 +355,7 @@ def get_manager_dashboard(db: Session = Depends(get_db)):
     due_soon_list = [{
         "task": t.title,
         "deadline": t.deadline_date,
-        "assigned_to": t.assigned_to # Can be helpful for the frontend to know who to bug!
+        "assigned_to": t.assigned_employee.name if t.assigned_employee else "Unassigned"
     } for t in tasks_due_soon]
     
     # 3. WALL OF SHAME: Find tasks that were recently reassigned
@@ -389,4 +412,220 @@ def get_manager_dashboard(db: Session = Depends(get_db)):
             "reassignments_count": len(reassignment_list),
             "reassignments": reassignment_list
         }
+    }
+
+# ==========================================
+# 🚨 AUTH: SEED CREDENTIALS ROUTE 🚨
+# ==========================================
+@app.post("/seed-credentials")
+def generate_dummy_logins(db: Session = Depends(get_db)):
+    employees = db.query(models.Employee).all()
+    
+    updated_count = 0
+    for emp in employees:
+        # Skip if already a manager (don't overwrite)
+        if emp.email == "admin@scrummaster.com":
+            continue
+            
+        # Generate email from name
+        if emp.name:
+            clean_name = emp.name.lower().replace(" ", ".")
+            # Remove any special characters
+            clean_name = ''.join(c for c in clean_name if c.isalnum() or c == '.')
+            emp.email = f"{clean_name}@scrummaster.com"
+        else:
+            emp.email = f"emp{emp.user_id[:8]}@scrummaster.com"
+            
+        # Set universal test password
+        emp.hashed_password = "password123"
+        
+        # Set role to employee (preserve existing role if it's already set to something meaningful)
+        if not emp.role or emp.role == "manager":
+            pass  # Don't change manager roles
+        else:
+            emp.role = "employee"
+        updated_count += 1
+
+    # Create the Super Manager if it doesn't exist
+    manager_email = "admin@scrummaster.com"
+    existing_manager = db.query(models.Employee).filter_by(email=manager_email).first()
+    
+    if not existing_manager:
+        new_manager = models.Employee(
+            user_id=str(uuid.uuid4()),
+            name="Super Manager",
+            email=manager_email,
+            hashed_password="admin",
+            role="manager",
+            domain="Management",
+            experience=10,
+            skills=["Management", "Leadership", "Strategy"],
+            avg_quality_score=9.5,
+            reliability_score=100
+        )
+        db.add(new_manager)
+        
+    db.commit()
+    
+    return {
+        "status": "success", 
+        "message": f"Successfully generated emails and passwords for {updated_count} employees!",
+        "manager_login": "Email: admin@scrummaster.com | Password: admin",
+        "employee_login_format": "firstname.lastname@scrummaster.com | Password: password123"
+    }
+
+# ==========================================
+# 🚨 AUTH: LOGIN ROUTE 🚨
+# ==========================================
+@app.post("/login")
+def login(request: LoginRequest, db: Session = Depends(get_db)):
+    # Find user by email
+    user = db.query(models.Employee).filter(models.Employee.email == request.email).first()
+    
+    if not user:
+        return {"status": "error", "message": "No account found with this email."}
+    
+    # Check password (plain text for now — not production-ready!)
+    if user.hashed_password != request.password:
+        return {"status": "error", "message": "Incorrect password."}
+    
+    # Determine role
+    is_manager = (user.role == "manager") or (user.email == "admin@scrummaster.com")
+    
+    return {
+        "status": "success",
+        "message": f"Welcome back, {user.name}!",
+        "user": {
+            "user_id": user.user_id,
+            "name": user.name,
+            "email": user.email,
+            "role": "manager" if is_manager else "employee",
+            "domain": user.domain,
+            "skills": user.skills,
+            "experience": user.experience,
+            "reliability_score": user.reliability_score,
+            "avg_quality_score": user.avg_quality_score
+        }
+    }
+
+# ==========================================
+# 🚨 EMPLOYEE: MY TASKS ROUTE 🚨
+# ==========================================
+@app.get("/employee/{user_id}/tasks")
+def get_employee_tasks(user_id: str, db: Session = Depends(get_db)):
+    """Returns all tasks assigned to a specific employee."""
+    tasks = db.query(models.Task).filter(models.Task.assigned_to == user_id).all()
+    
+    task_list = []
+    for t in tasks:
+        project = db.query(models.Project).filter(models.Project.project_id == t.project_id).first()
+        task_list.append({
+            "task_id": t.task_id,
+            "title": t.title,
+            "status": t.status,
+            "deadline_date": t.deadline_date,
+            "estimated_days": t.estimated_days,
+            "required_skills": t.required_skills,
+            "project_name": project.name if project else "Unknown",
+            "assignment_reason": t.assignment_reason
+        })
+    
+    return {
+        "status": "success",
+        "total_tasks": len(task_list),
+        "tasks": task_list
+    }
+
+import random
+
+@app.post("/fix-employee-skills")
+def balance_employee_skills(db: Session = Depends(get_db)):
+    # 0. Migrate existing tasks to standard names
+    skill_mapping = {
+        "node": "Node.js",
+        "express": "Express.js",
+        "api integration": "api development",
+        "REST APIs": "REST API design",
+        "REST API consumption": "REST API design",
+        "Cybersecurity": "security engineering",
+        "javascript": "JavaScript",
+        "typescript": "TypeScript",
+        "react": "React",
+        "mongodb": "MongoDB",
+        "ui/ux": "UI/UX"
+    }
+    
+    tasks = db.query(models.Task).all()
+    for task in tasks:
+        if task.required_skills:
+            new_skills = []
+            for s in task.required_skills:
+                s_lower = s.strip().lower()
+                matched = False
+                for old_key, new_val in skill_mapping.items():
+                    if s_lower == old_key.lower():
+                        new_skills.append(new_val)
+                        matched = True
+                        break
+                if not matched:
+                    new_skills.append(s.strip())
+            task.required_skills = list(set(new_skills))
+    db.commit()
+
+    TECH_POOL = [
+        "HTML", "CSS", "JavaScript", "TypeScript", "JavaScript/TypeScript", "React", "Next.js", 
+        "Vue.js", "Angular", "Tailwind CSS", "SASS", "Redux", "Webpack", 
+        "Figma", "UI/UX", "Responsive Design", "Micro-frontends",
+        "Node.js", "Express.js", "backend development", "Python", "FastAPI", "Django", "Flask", 
+        "Java", "Spring Boot", "C++", "C#", ".NET", "Go", "Rust", 
+        "Ruby on Rails", "PHP", "Microservices", "REST API design", "GraphQL", 
+        "gRPC", "WebSockets", "api development",
+        "database management", "SQL", "PostgreSQL", "MySQL", "MongoDB", 
+        "Mongoose", "Redis", "Elasticsearch", "Cassandra", "DynamoDB", 
+        "Firebase", "Oracle", "Prisma", "Sequelize",
+        "DevOps", "Linux", "Docker", "Kubernetes", "AWS", "Azure", "GCP", 
+        "CI/CD", "Jenkins", "GitHub Actions", "Terraform", "Ansible", 
+        "Nginx", "Apache", "Prometheus", "Grafana", "Bash Scripting",
+        "React Native", "Flutter", "Swift", "Kotlin", "iOS Development", 
+        "Android Development", "Dart",
+        "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", 
+        "NLP", "Computer Vision", "Pandas", "NumPy", "Scikit-learn", 
+        "Data Analytics", "Prompt Engineering", "LLMs", "Vector Databases",
+        "Jest", "Supertest", "Cypress", "Selenium", "Mocha", "Chai", 
+        "TDD", "QA Automation", "Postman",
+        "jwt", "OAuth", "security engineering", "Penetration Testing", "Cryptography", 
+        "System Design", "Cloud Architecture", "Serverless", "SSO",
+        "Git", "GitHub", "npm/yarn", "Axios", "Agile", "Scrum", "Jira", 
+        "Communication", "Technical Writing", "Problem Solving", "Leadership", 
+        "Code Review", "Pair Programming"
+    ]
+    
+    employees = db.query(models.Employee).filter(models.Employee.role != "manager").all()
+    
+    # 1. Sabke skills reset karne ke liye ek khali set banao
+    emp_skills_dict = {emp.user_id: set() for emp in employees}
+    
+    # 2. 🚨 THE GUARANTEE LOGIC: Har ek skill ko pakdo
+    for skill in TECH_POOL:
+        # Har skill ke liye minimum 8, maximum 12 random log chuno
+        chosen_emps = random.sample(employees, k=random.randint(8, 12))
+        
+        for emp in chosen_emps:
+            emp_skills_dict[emp.user_id].add(skill)
+
+    # 3. Failsafe: Ensure koi employee bina skill ke na bache (Minimum 3 skills)
+    for emp in employees:
+        while len(emp_skills_dict[emp.user_id]) < 3:
+            emp_skills_dict[emp.user_id].add(random.choice(TECH_POOL))
+            
+    # 4. Database me update kardo
+    for emp in employees:
+        emp.skills = list(emp_skills_dict[emp.user_id])
+        
+    db.commit()
+    
+    return {
+        "status": "success",
+        "message": f"Successfully guaranteed 8-12 employees for EVERY skill in the pool!",
+        "pool_size": len(TECH_POOL)
     }

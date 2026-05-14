@@ -8,7 +8,7 @@ def seed_history():
     employees = db.query(models.Employee).all()
     
     if not employees:
-        print("❌ No employees found. Run seed.py first!")
+        print("[ERROR] No employees found. Run seed.py first!")
         return
 
     print(f"Seeding history for {len(employees)} employees...")
@@ -35,7 +35,7 @@ def seed_history():
             
     db.commit()
     db.close()
-    print("✅ Reliability history seeded!")
+    print("[OK] Reliability history seeded!")
 
 if __name__ == "__main__":
     seed_history()

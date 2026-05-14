@@ -1,0 +1,30 @@
+# Python
+venv/
+*.py[cod]
+__pycache__/
+*.so
+*.dll
+*.pyd
+*.pkl
+backend/processed_fixed.json
+*.sqlite3
+*.db
+.env
+*.log
+
+# Frontend / Node
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/.env
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# OS / Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

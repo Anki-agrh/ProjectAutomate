@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 import joblib
 
-print("Booting up the APEX AI Training Sequence...")
+print("Booting up the ScrumMaster AI Training Sequence...")
 
 num_samples = 5000
 
