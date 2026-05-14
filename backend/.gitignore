@@ -5,3 +5,4 @@ __pycache__/
 processed_fixed.json
 .env
 *.log
+.venv/
