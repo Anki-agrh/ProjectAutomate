@@ -6,11 +6,13 @@ const ProjectCard = ({ project, isSelected, onClick, index = 0 }) => (
   <motion.button
     initial={{ opacity: 0, x: -15 }}
     animate={{ opacity: 1, x: 0 }}
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
     transition={{ delay: index * 0.06, duration: 0.4 }}
     onClick={onClick}
     className={`w-full text-left p-5 rounded-2xl transition-all duration-300 border ${
       isSelected
-        ? 'bg-cyber-primary/[0.08] border-cyber-primary/30 shadow-lg shadow-cyber-primary/5'
+        ? 'bg-cyber-primary/[0.08] border-cyber-primary/40 shadow-lg shadow-cyber-primary/5 neon-border'
         : 'bg-white/[0.02] border-white/[0.05] hover:bg-white/[0.04] hover:border-white/[0.1]'
     }`}
   >

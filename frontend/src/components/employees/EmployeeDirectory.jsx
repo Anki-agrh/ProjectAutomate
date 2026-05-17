@@ -32,12 +32,18 @@ const EmployeeDirectory = ({ employees, selectedId, onSelect, searchTerm, onSear
             animate={{ opacity: 1 }}
             transition={{ delay: idx * 0.03 }}
             onClick={() => onSelect(emp.user_id)}
-            className={`w-full flex items-center gap-3.5 p-4 transition-all border-b border-white/[0.04] last:border-0 ${
+            className={`w-full flex items-center gap-3.5 p-4 transition-all border-b border-white/[0.04] last:border-0 relative group ${
               selectedId === emp.user_id
-                ? 'bg-cyber-primary/[0.08] border-r-[3px] border-r-cyber-primary'
+                ? 'bg-cyber-primary/[0.08]'
                 : 'hover:bg-white/[0.03]'
             }`}
           >
+            {selectedId === emp.user_id && (
+              <motion.div
+                layoutId="active-emp"
+                className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-8 bg-cyber-primary neon-glow-primary rounded-r-full"
+              />
+            )}
             {/* Avatar */}
             <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold shrink-0 ${
               selectedId === emp.user_id

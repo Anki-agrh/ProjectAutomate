@@ -10,19 +10,23 @@ export const useAuth = () => {
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
-    // Restore session from localStorage
     const saved = localStorage.getItem('scrummaster_user');
     return saved ? JSON.parse(saved) : null;
   });
 
-  const login = (userData) => {
-    setUser(userData);
-    localStorage.setItem('scrummaster_user', JSON.stringify(userData));
+  const login = (data) => {
+    // Assuming data contains { user: {...}, access_token: "..." }
+    setUser(data.user);
+    localStorage.setItem('scrummaster_user', JSON.stringify(data.user));
+    if (data.access_token) {
+      localStorage.setItem('scrummaster_token', data.access_token);
+    }
   };
 
   const logout = () => {
     setUser(null);
     localStorage.removeItem('scrummaster_user');
+    localStorage.removeItem('scrummaster_token');
   };
 
   const isManager = user?.role === 'manager';

@@ -4,22 +4,26 @@ import { Home, PlusSquare, Folder, Users, Zap, BarChart3, ChevronRight, LogOut, 
 import { useTheme } from '../context/ThemeContext';
 import ThemeToggle from './ui/ThemeToggle';
 
+import { useNavigate, useLocation } from 'react-router-dom';
+
 const managerNavItems = [
-  { id: 'dashboard', label: 'Dashboard', icon: Home },
-  { id: 'create', label: 'Create Project', icon: PlusSquare },
-  { id: 'projects', label: 'Active Projects', icon: Folder },
-  { id: 'employees', label: 'All Employees', icon: Users },
-  { id: 'overdue', label: 'Time Machine', icon: Zap },
-  { id: 'analytics', label: 'System Analytics', icon: BarChart3 },
+  { id: '/dashboard', label: 'Dashboard', icon: Home },
+  { id: '/create', label: 'Create Project', icon: PlusSquare },
+  { id: '/projects', label: 'Active Projects', icon: Folder },
+  { id: '/employees', label: 'All Employees', icon: Users },
+  { id: '/overdue', label: 'Time Machine', icon: Zap },
+  { id: '/analytics', label: 'System Analytics', icon: BarChart3 },
 ];
 
 const employeeNavItems = [
-  { id: 'my-tasks', label: 'My Tasks', icon: Briefcase },
+  { id: '/my-tasks', label: 'My Tasks', icon: Briefcase },
 ];
 
 const SidebarItem = ({ icon: Icon, label, active, onClick, isDark }) => (
-  <button
+  <motion.button
     onClick={onClick}
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
     className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 relative group ${
       active
         ? isDark
@@ -42,11 +46,13 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, isDark }) => (
     <Icon size={18} strokeWidth={active ? 2.2 : 1.6} className="shrink-0 transition-all" />
     <span className={`text-sm ${active ? 'font-bold' : 'font-medium'} transition-all`}>{label}</span>
     {active && <ChevronRight size={14} className={`ml-auto opacity-60 ${isDark ? 'text-cyber-primary' : 'text-indigo-500'}`} />}
-  </button>
+  </motion.button>
 );
 
-const Sidebar = ({ activePage, setActivePage, user, onLogout, isManager }) => {
+const Sidebar = ({ user, onLogout, isManager }) => {
   const { isDark } = useTheme();
+  const navigate = useNavigate();
+  const location = useLocation();
   const navItems = isManager ? managerNavItems : employeeNavItems;
 
   return (
@@ -92,8 +98,8 @@ const Sidebar = ({ activePage, setActivePage, user, onLogout, isManager }) => {
           <SidebarItem
             key={item.id}
             {...item}
-            active={activePage === item.id}
-            onClick={() => setActivePage(item.id)}
+            active={location.pathname === item.id}
+            onClick={() => navigate(item.id)}
             isDark={isDark}
           />
         ))}

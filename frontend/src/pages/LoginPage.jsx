@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { toast } from 'sonner';
 import { LogIn, Loader2, Shield, Users, AlertCircle, Eye, EyeOff, ArrowLeft } from 'lucide-react';
 import { loginUser } from '../api';
 import { useTheme } from '../context/ThemeContext';
@@ -21,11 +22,14 @@ const LoginPage = ({ onLogin, onBack }) => {
     try {
       const res = await loginUser({ email, password });
       if (res.data.status === 'success') {
-        onLogin(res.data.user);
+        toast.success(res.data.message || 'Login successful!');
+        onLogin(res.data);
       } else {
+        toast.error(res.data.message || 'Login failed.');
         setError(res.data.message || 'Login failed.');
       }
     } catch (err) {
+      toast.error('Cannot connect to ScrumMaster server.');
       setError('Cannot connect to ScrumMaster server. Is the backend running?');
     } finally {
       setLoading(false);
@@ -91,9 +95,9 @@ const LoginPage = ({ onLogin, onBack }) => {
         {/* Background Orbs */}
         {isDark && (
           <>
-            <div className="fixed top-[-20%] right-[-10%] w-[600px] h-[600px] bg-cyber-primary/[0.06] blur-[180px] rounded-full pointer-events-none" />
-            <div className="fixed bottom-[-15%] left-[-5%] w-[500px] h-[500px] bg-cyber-secondary/[0.05] blur-[150px] rounded-full pointer-events-none" />
-            <div className="fixed top-[30%] left-[40%] w-[300px] h-[300px] bg-cyber-accent/[0.03] blur-[120px] rounded-full pointer-events-none" />
+            <div className="floating-orb w-[600px] h-[600px] bg-cyber-primary/20 top-[-20%] right-[-10%] blur-[180px]" />
+            <div className="floating-orb w-[500px] h-[500px] bg-cyber-secondary/15 bottom-[-15%] left-[-5%] blur-[150px]" style={{ animationDelay: '-2s' }} />
+            <div className="floating-orb w-[300px] h-[300px] bg-cyber-accent/10 top-[30%] left-[40%] blur-[120px]" style={{ animationDelay: '-4s' }} />
           </>
         )}
 

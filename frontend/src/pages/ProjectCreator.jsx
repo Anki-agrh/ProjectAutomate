@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { toast } from 'sonner';
 import { Sparkles, Loader2, CheckCircle2, ArrowRight } from 'lucide-react';
 import { generateProject } from '../api';
 import { PageHeader, GlassCard, SkillTag } from '../components/ui';
@@ -16,16 +17,20 @@ const ProjectCreator = () => {
     try {
       const res = await generateProject(formData);
       setResult(res.data);
+      toast.success('Project architecture generated successfully!');
     } catch (err) {
       console.error(err);
-      alert('AI failed to architect the project. Check your backend/API key.');
+      toast.error('AI failed to architect the project. Check your backend/API key.');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="p-8 md:p-10 max-w-6xl mx-auto">
+    <div className="p-8 md:p-10 max-w-7xl mx-auto relative overflow-hidden">
+      <div className="floating-orb w-[400px] h-[400px] bg-cyber-primary/10 -top-20 -right-20 blur-[100px]" />
+      <div className="floating-orb w-[300px] h-[300px] bg-cyber-secondary/5 bottom-10 left-0 blur-[80px]" style={{ animationDelay: '-3s' }} />
+
       <PageHeader
         icon={Sparkles}
         title="AI Project"

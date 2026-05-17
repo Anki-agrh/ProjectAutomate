@@ -92,8 +92,9 @@
 }
 
 .input-base:focus {
-  @apply outline-none border-cyber-primary/50 bg-white/[0.06];
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  @apply outline-none border-cyber-primary bg-white/[0.06];
+  box-shadow: 0 0 0 1px var(--color-cyber-primary),
+              0 0 20px rgba(99, 102, 241, 0.15);
 }
 
 /* ============================================
@@ -143,6 +144,42 @@
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   @apply bg-white/[0.16];
+}
+
+/* ============================================
+   NEON UTILITIES
+   ============================================ */
+.floating-orb {
+  @apply absolute rounded-full mix-blend-screen filter blur-[80px] opacity-20 pointer-events-none;
+  animation: float 8s ease-in-out infinite;
+}
+
+.neon-border {
+  position: relative;
+}
+
+.neon-border::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(to right, var(--color-cyber-primary), var(--color-cyber-secondary));
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.neon-border:hover::after {
+  opacity: 0.6;
+}
+
+.neon-glow-hover {
+  transition: all 0.3s ease;
+}
+
+.neon-glow-hover:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.4);
 }
 
 /* ============================================

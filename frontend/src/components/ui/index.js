@@ -7,3 +7,4 @@ export { default as EmptyState } from './EmptyState';
 export { default as LoadingScreen } from './LoadingScreen';
 export { default as ErrorState } from './ErrorState';
 export { default as ProgressBar } from './ProgressBar';
+export { default as Skeleton } from './Skeleton';

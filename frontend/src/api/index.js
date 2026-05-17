@@ -5,11 +5,20 @@ const api = axios.create({
   timeout: 30000,
 });
 
+// Request interceptor to attach JWT token
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('scrummaster_token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
 // Response interceptor for error logging
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    const message = error.response?.data?.message || error.message || 'Network error';
+    const message = error.response?.data?.detail || error.response?.data?.message || error.message || 'Network error';
     console.error(`[ScrumMaster API Error] ${error.config?.method?.toUpperCase()} ${error.config?.url}: ${message}`);
     return Promise.reject(error);
   }
