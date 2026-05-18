@@ -5,6 +5,7 @@ import models
 from database import get_db
 from schemas import OverdueCheckRequest
 from assignment import find_best_employee
+from dependencies import get_current_user
 
 router = APIRouter()
 
@@ -38,10 +39,11 @@ def complete_task(task_id: str, db: Session = Depends(get_db)):
     }
 
 @router.post("/manage-overdue")
-def manage_overdue_tasks(request: OverdueCheckRequest, db: Session = Depends(get_db)):
-    query = db.query(models.Task).filter(
+def manage_overdue_tasks(request: OverdueCheckRequest, db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
+    query = db.query(models.Task).join(models.Project).filter(
         models.Task.status != "Completed",
-        models.Task.deadline_date < request.simulated_today
+        models.Task.deadline_date < request.simulated_today,
+        models.Project.manager_id == current_user.user_id
     )
     
     if request.project_id:
@@ -82,7 +84,7 @@ def manage_overdue_tasks(request: OverdueCheckRequest, db: Session = Depends(get
             current_score = current_emp.reliability_score or 100
             current_emp.reliability_score = max(0, current_score - 5)
             
-            new_emp, new_reason = find_best_employee(db, task.required_skills, active_workload={}, exclude_user_id=current_emp.user_id)
+            new_emp, new_reason = find_best_employee(db, task.required_skills, active_workload={}, exclude_user_id=current_emp.user_id, manager_id=current_user.user_id)
             
             if new_emp:
                 task.assigned_to = new_emp.user_id

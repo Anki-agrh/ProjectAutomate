@@ -3,10 +3,58 @@ from sqlalchemy.orm import Session
 import uuid
 import models
 from database import get_db
-from schemas import LoginRequest
+from schemas import LoginRequest, SignupRequest, ChangePasswordRequest
 from security import get_password_hash, verify_password, create_access_token
 
 router = APIRouter()
+
+@router.post("/signup")
+def signup_manager(request: SignupRequest, db: Session = Depends(get_db)):
+    """Register a new Manager account. Self-signup is restricted to the manager role."""
+    # Check email uniqueness
+    existing = db.query(models.Employee).filter(models.Employee.email == request.email).first()
+    if existing:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="An account with this email already exists."
+        )
+
+    new_manager = models.Employee(
+        user_id=str(uuid.uuid4()),
+        name=request.name,
+        email=request.email,
+        hashed_password=get_password_hash(request.password),
+        role="manager",
+        domain=request.domain or "Management",
+        skills=request.skills or ["Management", "Leadership"],
+        experience=request.experience if request.experience is not None else 5,
+        avg_quality_score=9.5,
+        reliability_score=100,
+    )
+    db.add(new_manager)
+    db.commit()
+    db.refresh(new_manager)
+
+    # Generate JWT so the frontend can auto-login
+    access_token = create_access_token(data={"sub": new_manager.email, "role": "manager"})
+
+    return {
+        "status": "success",
+        "message": f"Welcome aboard, {new_manager.name}! Your manager account is ready.",
+        "access_token": access_token,
+        "token_type": "bearer",
+        "user": {
+            "user_id": new_manager.user_id,
+            "name": new_manager.name,
+            "email": new_manager.email,
+            "role": "manager",
+            "domain": new_manager.domain,
+            "skills": new_manager.skills,
+            "experience": new_manager.experience,
+            "reliability_score": new_manager.reliability_score,
+            "avg_quality_score": new_manager.avg_quality_score,
+        },
+    }
 
 @router.post("/seed-credentials")
 def generate_dummy_logins(db: Session = Depends(get_db)):
@@ -101,4 +149,26 @@ def login(request: LoginRequest, db: Session = Depends(get_db)):
             "reliability_score": user.reliability_score,
             "avg_quality_score": user.avg_quality_score
         }
+    }
+
+@router.post("/change-password")
+def change_password(request: ChangePasswordRequest, db: Session = Depends(get_db)):
+    user = db.query(models.Employee).filter(models.Employee.email == request.email).first()
+    
+    if not user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No account found with this email.")
+        
+    if not verify_password(request.old_password, user.hashed_password):
+        # Fallback for old plain-text passwords
+        if user.hashed_password == request.old_password:
+            pass # allow it this one time to change
+        else:
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Incorrect current password.")
+            
+    user.hashed_password = get_password_hash(request.new_password)
+    db.commit()
+    
+    return {
+        "status": "success",
+        "message": "Password successfully updated!"
     }

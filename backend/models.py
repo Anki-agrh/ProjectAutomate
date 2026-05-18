@@ -16,6 +16,9 @@ class Employee(Base):
     experience = Column(Integer)
     avg_quality_score = Column(Float)
     reliability_score = Column(Integer)
+    
+    # MULTI-TENANCY: The manager this employee belongs to
+    manager_id = Column(String, ForeignKey("employees.user_id"), nullable=True)
 
     # This creates a virtual link to the Tables
     tasks = relationship("Task", back_populates="assigned_employee")
@@ -38,6 +41,9 @@ class Project(Base):
     name = Column(String)
     description = Column(String)
     status = Column(String, default="Planning") # Planning, Active, Completed
+
+    # MULTI-TENANCY: The manager this project belongs to
+    manager_id = Column(String, ForeignKey("employees.user_id"), nullable=True)
 
     # Link to all tasks inside this project
     tasks = relationship("Task", back_populates="project", cascade="all, delete-orphan")

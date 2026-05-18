@@ -26,7 +26,13 @@ api.interceptors.response.use(
 
 // Auth routes
 export const loginUser = (data) => api.post('/login', data);
+export const signupUser = (data) => api.post('/signup', data);
+export const changePassword = (data) => api.post('/change-password', data);
 export const seedCredentials = () => api.post('/seed-credentials');
+
+// Employee onboarding routes
+export const addEmployee = (data) => api.post('/employees', data);
+export const uploadEmployeesCsv = (formData) => api.post('/employees/upload-csv', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
 // Core routes
 export const getProjects = () => api.get('/projects');

@@ -3,14 +3,19 @@ from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 import models
 from database import get_db
+from dependencies import get_current_user
 
 router = APIRouter()
 
 @router.get("/manager/dashboard")
-def get_manager_dashboard(db: Session = Depends(get_db)):
-    total_projects = db.query(models.Project).count()
+def get_manager_dashboard(db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
+    projects_query = db.query(models.Project).filter(models.Project.manager_id == current_user.user_id)
+    total_projects = projects_query.count()
     
-    active_tasks_query = db.query(models.Task).filter(models.Task.status != "Completed")
+    active_tasks_query = db.query(models.Task).join(models.Project).filter(
+        models.Task.status != "Completed",
+        models.Project.manager_id == current_user.user_id
+    )
     total_active_tasks = active_tasks_query.count()
     
     today_obj = datetime.now()
@@ -30,8 +35,9 @@ def get_manager_dashboard(db: Session = Depends(get_db)):
         "assigned_to": t.assigned_employee.name if t.assigned_employee else "Unassigned"
     } for t in tasks_due_soon]
     
-    reassigned_tasks = db.query(models.Task).filter(
-        models.Task.assignment_reason.like("%[REASSIGNED%")
+    reassigned_tasks = db.query(models.Task).join(models.Project).filter(
+        models.Task.assignment_reason.like("%[REASSIGNED%"),
+        models.Project.manager_id == current_user.user_id
     ).all()
     
     reassignment_list = [{
@@ -39,13 +45,24 @@ def get_manager_dashboard(db: Session = Depends(get_db)):
         "reason": t.assignment_reason
     } for t in reassigned_tasks]
     
-    busy_employee_ids = [task.assigned_to for task in active_tasks_query.all() if task.assigned_to]
+    active_tasks = active_tasks_query.all()
+    workload_map = {}
+    for t in active_tasks:
+        if t.assigned_to:
+            workload_map[t.assigned_to] = workload_map.get(t.assigned_to, 0) + 1
+            
+    busy_employee_ids = list(workload_map.keys())
     
-    idle_employees = db.query(models.Employee).all()
+    all_employees = db.query(models.Employee).filter(
+        models.Employee.manager_id == current_user.user_id,
+        models.Employee.role != "manager"
+    ).all()
+    
     bench_list = []
     available_skills = {}
+    overloaded_workforce = []
     
-    for emp in idle_employees:
+    for emp in all_employees:
         if emp.user_id not in busy_employee_ids:
             bench_list.append({
                 "name": emp.name,
@@ -56,6 +73,20 @@ def get_manager_dashboard(db: Session = Depends(get_db)):
             if emp.skills:
                 for skill in emp.skills:
                     available_skills[skill] = available_skills.get(skill, 0) + 1
+        else:
+            overloaded_workforce.append({
+                "name": emp.name,
+                "tasks": workload_map.get(emp.user_id, 0),
+                "role": emp.domain or "Employee"
+            })
+            
+    overloaded_workforce.sort(key=lambda x: x["tasks"], reverse=True)
+    
+    bench_size = len(bench_list)
+    system_alert = None
+    if bench_size == 0 and len(all_employees) > 0:
+        system_alert = "CRITICAL CAPACITY: Bench is empty! Your workforce is fully saturated. Consider recruiting new employees or pausing project intake to manage workload effectively."
+
     
     return {
         "status": "success",
@@ -74,5 +105,7 @@ def get_manager_dashboard(db: Session = Depends(get_db)):
         "recent_activity": {
             "reassignments_count": len(reassignment_list),
             "reassignments": reassignment_list
-        }
+        },
+        "system_alert": system_alert,
+        "overloaded_workforce": overloaded_workforce if bench_size == 0 else []
     }

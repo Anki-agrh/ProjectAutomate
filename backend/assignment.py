@@ -26,7 +26,7 @@ import models
 
 # (Assuming embedding_model, ml_model, and EMPLOYEE_VECTOR_CACHE are defined at the top of your file)
 
-def find_best_employee(db: Session, required_skills: list, active_workload: dict = None, exclude_user_id: str = None, force_fresher: bool = False):
+def find_best_employee(db: Session, required_skills: list, active_workload: dict = None, exclude_user_id: str = None, force_fresher: bool = False, manager_id: str = None, bench_size: int = 0, current_project_id: str = None):
     
     if active_workload is None:
         active_workload = {}
@@ -40,6 +40,10 @@ def find_best_employee(db: Session, required_skills: list, active_workload: dict
     
     # 🚨 FIX: Exclude managers from being assigned basic tasks
     query = db.query(models.Employee).filter(models.Employee.role != "manager")
+
+    if manager_id:
+        query = query.filter(models.Employee.manager_id == manager_id)
+
 
     # ==========================================
     # 🚨 THE FRESHER FILTER 🚨
@@ -61,6 +65,15 @@ def find_best_employee(db: Session, required_skills: list, active_workload: dict
         # Skip the employee if they were just fired from this task!
         if exclude_user_id and emp.user_id == exclude_user_id:
             continue
+            
+        if bench_size > 0:
+            emp_wl = active_workload.get(emp.user_id, {"tasks": 0, "projects": set()})
+            # Constraint 1: Max 2 tasks per person
+            if emp_wl["tasks"] >= 2:
+                continue
+            # Constraint 2: Max 1 active project per person
+            if len(emp_wl["projects"]) > 0 and current_project_id not in emp_wl["projects"]:
+                continue
 
         emp_skills = emp.skills or []
         emp_text = " ".join(emp_skills)
@@ -103,7 +116,8 @@ def find_best_employee(db: Session, required_skills: list, active_workload: dict
         for i, (emp, sim) in enumerate(eligible_emps):
             base_score = batch_scores[i]
             
-            current_tasks = active_workload.get(emp.user_id, 0)
+            emp_wl = active_workload.get(emp.user_id, {"tasks": 0})
+            current_tasks = emp_wl["tasks"]
             workload_penalty = current_tasks * 1000 
             seniority_penalty = 15 if emp.experience > 7 else 0
                 
@@ -122,7 +136,8 @@ def find_best_employee(db: Session, required_skills: list, active_workload: dict
             avg_quality = getattr(emp, 'avg_quality_score', 0)
             base_score = ((sim * 60) + emp.experience + avg_quality) * ((emp.reliability_score or 100) / 100.0)
             
-            current_tasks = active_workload.get(emp.user_id, 0)
+            emp_wl = active_workload.get(emp.user_id, {"tasks": 0})
+            current_tasks = emp_wl["tasks"]
             workload_penalty = current_tasks * 1000 
             seniority_penalty = 15 if emp.experience > 7 else 0
                 

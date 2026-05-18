@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle, Clock, Briefcase, Loader2, Target, Calendar, Award } from 'lucide-react';
+import { CheckCircle, Clock, Briefcase, Loader2, Target, Calendar, Award, Lock } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useTheme } from '../context/ThemeContext';
 import useApi from '../hooks/useApi';
 import { getEmployeeTasks, completeTask } from '../api';
 import { PageHeader, GlassCard, StatusBadge, SkillTag, LoadingScreen, ErrorState, ProgressBar } from '../components/ui';
+import ChangePasswordModal from '../components/auth/ChangePasswordModal';
 
 const EmployeeDashboard = () => {
   const { user } = useAuth();
+  const { isDark } = useTheme();
   const { data, loading, error, refetch } = useApi(() => getEmployeeTasks(user.user_id), [user.user_id]);
   const [completingId, setCompletingId] = useState(null);
+  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
 
   const handleComplete = async (taskId) => {
     setCompletingId(taskId);
@@ -33,12 +37,25 @@ const EmployeeDashboard = () => {
 
   return (
     <div className="p-8 md:p-10">
-      <PageHeader
-        icon={Briefcase}
-        title={`Welcome,`}
-        highlight={user.name}
-        subtitle={`${user.domain || 'Employee'} • ${user.experience || 0}Y experience • Reliability: ${user.reliability_score || 100}%`}
-      />
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+        <PageHeader
+          icon={Briefcase}
+          title={`Welcome,`}
+          highlight={user.name}
+          subtitle={`${user.domain || 'Employee'} • ${user.experience || 0}Y experience • Reliability: ${user.reliability_score || 100}%`}
+        />
+        <button
+          onClick={() => setIsPasswordModalOpen(true)}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-colors ${
+            isDark 
+              ? 'bg-white/[0.05] border-white/10 text-white hover:bg-white/10' 
+              : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'
+          }`}
+        >
+          <Lock size={16} className="text-cyber-primary" />
+          Change Password
+        </button>
+      </div>
 
       {/* Stats Row */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
@@ -178,6 +195,11 @@ const EmployeeDashboard = () => {
           </div>
         </GlassCard>
       </div>
+
+      <ChangePasswordModal 
+        isOpen={isPasswordModalOpen} 
+        onClose={() => setIsPasswordModalOpen(false)} 
+      />
     </div>
   );
 };

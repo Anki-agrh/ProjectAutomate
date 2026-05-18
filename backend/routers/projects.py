@@ -8,30 +8,49 @@ from schemas import ProjectRequest
 from ai_planner import break_down_project
 from assignment import find_best_employee
 from datetime import datetime, timedelta
+from dependencies import get_current_user
 
 router = APIRouter()
 
 @router.get("/projects")
-def get_projects(db: Session = Depends(get_db)):
-    return db.query(models.Project).all()
+def get_projects(db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
+    return db.query(models.Project).filter(models.Project.manager_id == current_user.user_id).all()
 
 @router.post("/generate-project")
-def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get_db)):
+def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
     new_project_id = str(uuid.uuid4())
     new_project = models.Project(
         project_id=new_project_id, 
         name=request.name, 
-        description=request.description
+        description=request.description,
+        manager_id=current_user.user_id
     )
     db.add(new_project)
     db.commit()
 
     ai_phases = break_down_project(request.description)
     global_workload_tracker = {}
-    all_active_tasks = db.query(models.Task).filter(models.Task.status != "Completed").all()
+    
+    # Calculate bench size dynamically
+    total_emps = db.query(models.Employee).filter(
+        models.Employee.manager_id == current_user.user_id,
+        models.Employee.role != "manager"
+    ).count()
+
+    all_active_tasks = db.query(models.Task).join(models.Project).filter(
+        models.Task.status != "Completed",
+        models.Project.manager_id == current_user.user_id
+    ).all()
+    
     for active_task in all_active_tasks:
         if active_task.assigned_to:
-            global_workload_tracker[active_task.assigned_to] = global_workload_tracker.get(active_task.assigned_to, 0) + 1
+            if active_task.assigned_to not in global_workload_tracker:
+                global_workload_tracker[active_task.assigned_to] = {"tasks": 0, "projects": set()}
+            global_workload_tracker[active_task.assigned_to]["tasks"] += 1
+            global_workload_tracker[active_task.assigned_to]["projects"].add(active_task.project_id)
+            
+    busy_emps = len(global_workload_tracker.keys())
+    bench_size = max(0, total_emps - busy_emps)
     
     project_hierarchy = []
     freshers_hired_for_project = 0 
@@ -44,10 +63,10 @@ def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get
             task_skills = task_data.get("required_skills", [])
             needs_fresher = freshers_hired_for_project < 2
             
-            best_emp, ai_explanation = find_best_employee(db, task_skills, global_workload_tracker, force_fresher=needs_fresher)
+            best_emp, ai_explanation = find_best_employee(db, task_skills, global_workload_tracker, force_fresher=needs_fresher, manager_id=current_user.user_id, bench_size=bench_size, current_project_id=new_project_id)
             
             if not best_emp and needs_fresher:
-                best_emp, ai_explanation = find_best_employee(db, task_skills, global_workload_tracker, force_fresher=False)
+                best_emp, ai_explanation = find_best_employee(db, task_skills, global_workload_tracker, force_fresher=False, manager_id=current_user.user_id, bench_size=bench_size, current_project_id=new_project_id)
                 if best_emp:
                     ai_explanation = "[FALLBACK: No fresher had the skills] " + ai_explanation
             
@@ -58,7 +77,14 @@ def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get
             emp_name = best_emp.name if best_emp else "Unassigned (Needs Manual Review)"
             
             if emp_id:
-                global_workload_tracker[emp_id] = global_workload_tracker.get(emp_id, 0) + 1
+                if emp_id not in global_workload_tracker:
+                    global_workload_tracker[emp_id] = {"tasks": 0, "projects": set()}
+                global_workload_tracker[emp_id]["tasks"] += 1
+                global_workload_tracker[emp_id]["projects"].add(new_project_id)
+                
+                # If we just assigned someone new to a task and they weren't busy, bench size drops!
+                if global_workload_tracker[emp_id]["tasks"] == 1:
+                    bench_size = max(0, bench_size - 1)
 
             est_days = task_data.get("estimated_days", 3)
             task_deadline_obj = datetime.now() + timedelta(days=est_days)

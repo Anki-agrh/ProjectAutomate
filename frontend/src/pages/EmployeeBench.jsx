@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import { Users } from 'lucide-react';
+import { Users, UserPlus } from 'lucide-react';
 import { getEmployees } from '../api';
 import useApi from '../hooks/useApi';
 import { PageHeader, LoadingScreen, ErrorState } from '../components/ui';
 import EmployeeDirectory from '../components/employees/EmployeeDirectory';
 import EmployeeProfile from '../components/employees/EmployeeProfile';
+import OnboardModal from '../components/employees/OnboardModal';
 
 const EmployeeBench = () => {
   const { data: employees, loading, error, refetch } = useApi(getEmployees);
   const [selectedEmpId, setSelectedEmpId] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Auto-select first employee
   if (employees && employees.length > 0 && !selectedEmpId) {
@@ -28,7 +30,15 @@ const EmployeeBench = () => {
         title="Employee"
         highlight="Directory"
         subtitle="Browse all employees — reliability metrics, skill inventories, and resource allocation."
-      />
+      >
+        <button 
+          onClick={() => setIsModalOpen(true)}
+          className="btn-primary py-2 px-4 text-sm"
+        >
+          <UserPlus size={16} />
+          Onboard Personnel
+        </button>
+      </PageHeader>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left: Directory */}
@@ -54,8 +64,24 @@ const EmployeeBench = () => {
           )}
         </div>
       </div>
+
+      <AnimatePresence>
+        {isModalOpen && (
+          <OnboardModal 
+            isOpen={isModalOpen} 
+            onClose={() => setIsModalOpen(false)} 
+            onSuccess={() => {
+              refetch();
+              setSelectedEmpId(null); // Reset selection to see newest maybe, or let auto-select handle it
+            }}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
+
+// Quick addition of AnimatePresence to imports
+import { AnimatePresence } from 'framer-motion';
 
 export default EmployeeBench;

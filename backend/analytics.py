@@ -4,6 +4,7 @@ from database import SessionLocal
 import models
 from datetime import datetime, timedelta
 from typing import List, Dict
+from dependencies import get_current_user
 
 router = APIRouter(prefix="/analytics", tags=["analytics"])
 
@@ -15,10 +16,13 @@ def get_db():
         db.close()
 
 @router.get("/skill-gap")
-def get_skill_gap(db: Session = Depends(get_db)):
+def get_skill_gap(db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
     """Returns a comparison of required skills vs available bench skills."""
     # 1. Get all required skills from active (non-completed) tasks
-    active_tasks = db.query(models.Task).filter(models.Task.status != "Completed").all()
+    active_tasks = db.query(models.Task).join(models.Project).filter(
+        models.Task.status != "Completed",
+        models.Project.manager_id == current_user.user_id
+    ).all()
     required_skills_counts = {}
     skill_names = {} # Map normalized lower case to original case
     
@@ -31,7 +35,10 @@ def get_skill_gap(db: Session = Depends(get_db)):
             
     # 2. Get all available skills from employees who have NO active tasks
     busy_employee_ids = [t.assigned_to for t in active_tasks if t.assigned_to]
-    idle_employees = db.query(models.Employee).all()
+    idle_employees = db.query(models.Employee).filter(
+        models.Employee.manager_id == current_user.user_id,
+        models.Employee.role != "manager"
+    ).all()
     available_skills_counts = {}
     for emp in idle_employees:
         if emp.user_id not in busy_employee_ids:
@@ -65,9 +72,12 @@ def get_employee_growth(user_id: str, db: Session = Depends(get_db)):
     ]
 
 @router.get("/gantt/{project_id}")
-def get_project_gantt(project_id: str, db: Session = Depends(get_db)):
+def get_project_gantt(project_id: str, db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
     """Returns task data formatted for a timeline view."""
-    tasks = db.query(models.Task).filter(models.Task.project_id == project_id).all()
+    tasks = db.query(models.Task).join(models.Project).filter(
+        models.Task.project_id == project_id,
+        models.Project.manager_id == current_user.user_id
+    ).all()
     
     gantt_data = []
     # In a real app, we'd have a start_date. For now, we use a mock start date 
@@ -90,17 +100,22 @@ def get_project_gantt(project_id: str, db: Session = Depends(get_db)):
     return gantt_data
 
 @router.get("/overview")
-def get_analytics_overview(db: Session = Depends(get_db)):
+def get_analytics_overview(db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
     """Returns comprehensive analytics data for the System Analytics dashboard."""
     today_str = datetime.now().strftime("%Y-%m-%d")
     three_days_str = (datetime.now() + timedelta(days=3)).strftime("%Y-%m-%d")
     
     # --- All employees ---
-    all_employees = db.query(models.Employee).all()
+    all_employees = db.query(models.Employee).filter(
+        models.Employee.manager_id == current_user.user_id,
+        models.Employee.role != "manager"
+    ).all()
     total_employees = len(all_employees)
     
     # --- All tasks ---
-    all_tasks = db.query(models.Task).all()
+    all_tasks = db.query(models.Task).join(models.Project).filter(
+        models.Project.manager_id == current_user.user_id
+    ).all()
     active_tasks = [t for t in all_tasks if t.status != "Completed"]
     completed_tasks = [t for t in all_tasks if t.status == "Completed"]
     
@@ -123,7 +138,7 @@ def get_analytics_overview(db: Session = Depends(get_db)):
     }
     
     # --- Project health (completion % per project) ---
-    projects = db.query(models.Project).all()
+    projects = db.query(models.Project).filter(models.Project.manager_id == current_user.user_id).all()
     project_health = []
     for proj in projects:
         proj_tasks = [t for t in all_tasks if t.project_id == proj.project_id]
