@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Home, PlusSquare, Folder, Users, Zap, BarChart3, ChevronRight, LogOut, Briefcase, Shield } from 'lucide-react';
+import { Home, PlusSquare, Folder, Users, Zap, BarChart3, ChevronRight, LogOut, Briefcase, Shield, Trophy } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import ThemeToggle from './ui/ThemeToggle';
 
@@ -11,7 +11,8 @@ const managerNavItems = [
   { id: '/create', label: 'Create Project', icon: PlusSquare },
   { id: '/projects', label: 'Active Projects', icon: Folder },
   { id: '/employees', label: 'All Employees', icon: Users },
-  { id: '/overdue', label: 'Time Machine', icon: Zap },
+  { id: '/rankings', label: 'Employee Rankings', icon: Trophy },
+  { id: '/overdue', label: 'Overdue Actions', icon: Zap },
   { id: '/analytics', label: 'System Analytics', icon: BarChart3 },
 ];
 
@@ -64,8 +65,8 @@ const Sidebar = ({ user, onLogout, isManager }) => {
       {/* Logo + Theme Toggle */}
       <div className="flex items-center justify-between px-6 py-6 mb-2">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyber-primary to-cyber-secondary flex items-center justify-center font-extrabold text-sm text-white shadow-lg shadow-cyber-primary/20">
-            S
+          <div className="w-9 h-9 flex items-center justify-center">
+            <img src="/logo.png" alt="ScrumMaster Logo" className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
           </div>
           <div>
             <h1 className="text-base font-extrabold tracking-tight uppercase leading-none">ScrumMaster</h1>

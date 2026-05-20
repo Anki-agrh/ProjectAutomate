@@ -106,8 +106,8 @@ const HomePage = ({ onNavigateToLogin }) => {
       }`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyber-primary to-cyber-secondary flex items-center justify-center font-extrabold text-white text-sm shadow-lg shadow-cyber-primary/20">
-              S
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src="/logo.png" alt="ScrumMaster Logo" className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
             </div>
             <div>
               <h1 className="text-lg font-extrabold tracking-tight uppercase leading-none">ScrumMaster</h1>

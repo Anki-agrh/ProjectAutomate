@@ -21,20 +21,20 @@ const GrowthTrendChart = ({ userId }) => {
           Insufficient historical data
         </div>
       ) : (
-        <div className="h-44 w-full">
+        <div className="h-44 w-full text-slate-400">
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={data}>
               <defs>
                 <linearGradient id="growthGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#6366f1" stopOpacity={0.3} />
-                  <stop offset="100%" stopColor="#6366f1" stopOpacity={0} />
+                  <stop offset="0%" stopColor="var(--color-cyber-primary, #6366f1)" stopOpacity={0.3} />
+                  <stop offset="100%" stopColor="var(--color-cyber-primary, #6366f1)" stopOpacity={0} />
                 </linearGradient>
               </defs>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.03)" vertical={false} />
               <XAxis dataKey="date" hide />
-              <YAxis domain={[0, 100]} axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 9 }} width={30} />
-              <Tooltip contentStyle={{ backgroundColor: '#0a0e1a', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '10px', fontSize: '12px' }} itemStyle={{ color: '#22d3ee' }} />
-              <Area type="monotone" dataKey="score" stroke="#6366f1" strokeWidth={2.5} fill="url(#growthGrad)" dot={{ fill: '#6366f1', r: 3, strokeWidth: 0 }} activeDot={{ r: 5, fill: '#22d3ee', strokeWidth: 0 }} />
+              <YAxis domain={[0, 100]} axisLine={false} tickLine={false} tick={{ fill: 'currentColor', opacity: 0.6, fontSize: 9 }} width={30} />
+              <Tooltip contentStyle={{ backgroundColor: 'var(--color-cyber-dark, #0a0e1a)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '10px', fontSize: '12px' }} itemStyle={{ color: 'var(--color-cyber-accent, #22d3ee)' }} />
+              <Area type="monotone" dataKey="score" stroke="var(--color-cyber-primary, #6366f1)" strokeWidth={2.5} fill="url(#growthGrad)" dot={{ fill: 'var(--color-cyber-primary, #6366f1)', r: 3, strokeWidth: 0 }} activeDot={{ r: 5, fill: 'var(--color-cyber-accent, #22d3ee)', strokeWidth: 0 }} />
             </AreaChart>
           </ResponsiveContainer>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Briefcase, CheckCircle, Users, AlertCircle, Lock, AlertTriangle } from 'lucide-react';
 import { getDashboardInfo } from '../api';
+import { useNavigate } from 'react-router-dom';
 import useApi from '../hooks/useApi';
 import { PageHeader, StatCard, Skeleton, ErrorState } from '../components/ui';
 import { useTheme } from '../context/ThemeContext';
@@ -13,6 +14,7 @@ const Dashboard = () => {
   const { isDark } = useTheme();
   const { data, loading, error, refetch } = useApi(getDashboardInfo);
   const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   if (error) return <ErrorState message="Failed to sync with ScrumMaster brain." onRetry={refetch} />;
 
@@ -65,9 +67,30 @@ const Dashboard = () => {
 
           {/* Stat Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
-            <StatCard icon={Briefcase} label="Total Projects" value={data.overview.total_projects} color="bg-indigo-500/15 text-indigo-400" delay={0.05} />
-            <StatCard icon={CheckCircle} label="Active Tasks" value={data.overview.total_active_tasks} color="bg-emerald-500/15 text-emerald-400" delay={0.1} />
-            <StatCard icon={Users} label="On Bench" value={data.overview.total_employees_on_bench} color="bg-cyan-500/15 text-cyan-400" delay={0.15} />
+            <StatCard 
+              icon={Briefcase} 
+              label="Total Projects" 
+              value={data.overview.total_projects} 
+              color="bg-indigo-500/15 text-indigo-400" 
+              delay={0.05} 
+              onClick={() => navigate('/projects')}
+            />
+            <StatCard 
+              icon={CheckCircle} 
+              label="Active Tasks" 
+              value={data.overview.total_active_tasks} 
+              color="bg-emerald-500/15 text-emerald-400" 
+              delay={0.1} 
+              onClick={() => navigate('/projects')}
+            />
+            <StatCard 
+              icon={Users} 
+              label="On Bench" 
+              value={data.overview.total_employees_on_bench} 
+              color="bg-cyan-500/15 text-cyan-400" 
+              delay={0.15} 
+              onClick={() => navigate('/employees?filter=bench')}
+            />
             <StatCard icon={AlertCircle} label="Due Soon" value={data.alerts.tasks_due_soon_count} color="bg-rose-500/15 text-rose-400" delay={0.2} />
           </div>
 

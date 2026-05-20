@@ -43,6 +43,12 @@ const TaskBacklog = ({ projectId }) => {
             <div className="flex items-center gap-2 mt-1.5">
               <span className="text-[10px] text-slate-500">{task.assigned_to}</span>
               <StatusBadge status={task.progress === 100 ? 'Completed' : 'Active'} />
+              {task.is_extended && (
+                <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded" title="Extended">EXT</span>
+              )}
+              {task.is_reassigned && (
+                <span className="text-[10px] font-bold text-rose-400 bg-rose-500/10 px-1.5 py-0.5 rounded" title="Reassigned">REASSIGNED</span>
+              )}
             </div>
           </div>
           {task.progress !== 100 && (

@@ -102,8 +102,10 @@ const GanttChart = ({ projectId }) => {
                 className="flex items-center group"
               >
                 <div className="w-[35%] shrink-0 pr-4">
-                  <p className="text-sm font-semibold truncate text-slate-300 group-hover:text-white transition-colors">
-                    {task.name}
+                  <p className="text-sm font-semibold truncate text-slate-300 group-hover:text-white transition-colors flex items-center gap-1.5">
+                    <span className="truncate">{task.name}</span>
+                    {task.is_extended && <span title="Extended" className="shrink-0 text-[8px] font-bold bg-emerald-500/20 text-emerald-400 px-1 rounded uppercase">Ext</span>}
+                    {task.is_reassigned && <span title="Reassigned" className="shrink-0 text-[8px] font-bold bg-rose-500/20 text-rose-400 px-1 rounded uppercase">Re</span>}
                   </p>
                   <p className="text-[10px] text-slate-600 font-medium">{task.assigned_to}</p>
                 </div>

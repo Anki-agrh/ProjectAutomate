@@ -12,6 +12,7 @@ import ProjectCreator from './pages/ProjectCreator';
 import ActiveProjects from './pages/ActiveProjects';
 import EmployeeBench from './pages/EmployeeBench';
 import TimeMachine from './pages/TimeMachine';
+import Rankings from './pages/Rankings';
 import Analytics from './pages/Analytics';
 import EmployeeDashboard from './pages/EmployeeDashboard';
 import PageTransition from './components/ui/PageTransition';
@@ -89,6 +90,7 @@ function App() {
             <Route path="/create" element={<PageTransition><ProjectCreator /></PageTransition>} />
             <Route path="/projects" element={<PageTransition><ActiveProjects /></PageTransition>} />
             <Route path="/employees" element={<PageTransition><EmployeeBench /></PageTransition>} />
+            <Route path="/rankings" element={<PageTransition><Rankings /></PageTransition>} />
             <Route path="/overdue" element={<PageTransition><TimeMachine /></PageTransition>} />
             <Route path="/analytics" element={<PageTransition><Analytics /></PageTransition>} />
             <Route path="*" element={<Navigate to="/dashboard" replace />} />

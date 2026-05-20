@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
 
-const EmployeeDirectory = ({ employees, selectedId, onSelect, searchTerm, onSearchChange }) => {
-  const filtered = employees.filter(emp =>
+const EmployeeDirectory = ({ employees, selectedId, onSelect, searchTerm, onSearchChange, filterParam = 'all', onFilterChange }) => {
+  const benchEmployees = employees.filter(emp => emp.is_on_bench);
+  const currentList = filterParam === 'bench' ? benchEmployees : employees;
+
+  const filtered = currentList.filter(emp =>
     emp.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     emp.user_id.toLowerCase().includes(searchTerm.toLowerCase()) ||
     emp.domain?.toLowerCase().includes(searchTerm.toLowerCase())
@@ -11,6 +14,24 @@ const EmployeeDirectory = ({ employees, selectedId, onSelect, searchTerm, onSear
 
   return (
     <div className="flex flex-col gap-4">
+      {/* Tabs */}
+      {onFilterChange && (
+        <div className="flex bg-white/[0.02] p-1 rounded-xl">
+          <button 
+            onClick={() => onFilterChange('all')}
+            className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${filterParam !== 'bench' ? 'bg-cyber-primary/20 text-cyber-primary' : 'text-slate-500 hover:text-slate-300'}`}
+          >
+            All Employees ({employees.length})
+          </button>
+          <button 
+            onClick={() => onFilterChange('bench')}
+            className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${filterParam === 'bench' ? 'bg-cyber-primary/20 text-cyber-primary' : 'text-slate-500 hover:text-slate-300'}`}
+          >
+            On Bench ({benchEmployees.length})
+          </button>
+        </div>
+      )}
+
       {/* Search */}
       <div className="relative">
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" size={16} />

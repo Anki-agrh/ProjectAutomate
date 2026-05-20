@@ -37,6 +37,7 @@ export const uploadEmployeesCsv = (formData) => api.post('/employees/upload-csv'
 // Core routes
 export const getProjects = () => api.get('/projects');
 export const getEmployees = () => api.get('/employees');
+export const getEmployeeRankings = () => api.get('/rankings');
 export const getDashboardInfo = () => api.get('/manager/dashboard');
 export const generateProject = (data) => api.post('/generate-project', data);
 export const completeTask = (taskId) => api.put(`/tasks/${taskId}/complete`);

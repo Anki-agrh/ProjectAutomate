@@ -165,9 +165,9 @@ const LoginPage = ({ onLogin, onBack }) => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
-              className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyber-primary to-cyber-secondary flex items-center justify-center mx-auto mb-5 shadow-lg shadow-cyber-primary/30"
+              className="w-20 h-20 mx-auto mb-5 flex items-center justify-center"
             >
-              <span className="text-2xl font-black text-white italic">S</span>
+              <img src="/logo.png" alt="ScrumMaster Logo" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" />
             </motion.div>
             <h1 className={`text-3xl font-extrabold tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
               ScrumMaster <span className="gradient-text-primary">Command Center</span>

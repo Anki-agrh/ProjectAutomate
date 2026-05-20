@@ -1,59 +1,51 @@
-import React, { useState } from 'react';
-import { Zap } from 'lucide-react';
-import { manageOverdue, getProjects } from '../api';
-import useApi from '../hooks/useApi';
-import { PageHeader, GlassCard } from '../components/ui';
-import SweepControls from '../components/timemachine/SweepControls';
+import React, { useState, useEffect } from 'react';
+import { Clock } from 'lucide-react';
+import { manageOverdue } from '../api';
+import { PageHeader, GlassCard, LoadingScreen } from '../components/ui';
 import SweepResults from '../components/timemachine/SweepResults';
 
 const TimeMachine = () => {
-  const [simulatedDate, setSimulatedDate] = useState(() => new Date().toISOString().split('T')[0]);
-  const [projectId, setProjectId] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [results, setResults] = useState(null);
 
-  const { data: projects } = useApi(getProjects);
-
-  const handleSweep = async () => {
-    setLoading(true);
-    setResults(null);
-    try {
-      const res = await manageOverdue({ simulated_today: simulatedDate, project_id: projectId || null });
-      setResults(res.data);
-    } catch (err) {
-      console.error(err);
-      alert('Temporal anomaly detected. Could not process overdue tasks.');
-    } finally {
-      setLoading(false);
-    }
-  };
+  useEffect(() => {
+    let isMounted = true;
+    
+    const runAutomaticSweep = async () => {
+      setLoading(true);
+      try {
+        const d = new Date();
+        const today = new Date(d.getTime() - (d.getTimezoneOffset() * 60000)).toISOString().split('T')[0];
+        const res = await manageOverdue({ simulated_today: today, project_id: null });
+        if (isMounted) setResults(res.data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        if (isMounted) setLoading(false);
+      }
+    };
+    
+    runAutomaticSweep();
+    return () => { isMounted = false; };
+  }, []);
 
   return (
     <div className="p-8 md:p-10">
       <PageHeader
-        icon={Zap}
-        title="Time"
-        highlight="Machine"
-        subtitle="Simulate the passage of time. ScrumMaster will trigger midnight sweeps, reassigning tasks and extending deadlines."
+        icon={Clock}
+        title="Overdue"
+        highlight="Resolution"
+        subtitle="Automatic task extension and reassignment for projects past their deadline."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <div className="lg:col-span-4">
-          <SweepControls
-            simulatedDate={simulatedDate}
-            projectId={projectId}
-            projects={projects}
-            onDateChange={setSimulatedDate}
-            onProjectIdChange={setProjectId}
-            onSweep={handleSweep}
-            loading={loading}
-          />
-        </div>
-        <div className="lg:col-span-8">
-          <GlassCard className="p-8 min-h-[500px]" delay={0.1}>
+      <div className="grid grid-cols-1 gap-8">
+        <GlassCard className="p-8 min-h-[500px]" delay={0.1}>
+          {loading ? (
+             <LoadingScreen message="Scanning for overdue tasks and taking automatic action..." />
+          ) : (
             <SweepResults results={results} loading={loading} />
-          </GlassCard>
-        </div>
+          )}
+        </GlassCard>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const SweepResults = ({ results, loading }) => {
     return (
       <div className="h-full flex flex-col items-center justify-center py-32">
         <div className="w-16 h-16 border-[3px] border-white/[0.05] border-t-amber-400 rounded-full animate-spin mb-6" />
-        <p className="text-amber-400 font-bold animate-pulse uppercase tracking-[0.2em] text-sm">Restructuring Reality</p>
+        <p className="text-amber-400 font-bold animate-pulse uppercase tracking-[0.2em] text-sm">Scanning for Overdue Tasks</p>
       </div>
     );
   }
@@ -32,7 +32,7 @@ const SweepResults = ({ results, loading }) => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <header className="flex items-center justify-between mb-8">
-        <h3 className="text-xl font-bold">Sweep <span className="gradient-text-primary">Log</span></h3>
+        <h3 className="text-xl font-bold">Resolution <span className="gradient-text-primary">Log</span></h3>
         <span className="text-xs font-bold text-slate-500 tabular-nums">{results.tasks_processed} tasks processed</span>
       </header>
 
@@ -65,7 +65,7 @@ const SweepResults = ({ results, loading }) => {
             </motion.div>
           ))
         ) : (
-          <EmptyState icon={Layers} title="Timeline is clear" description="No overdue tasks detected for this temporal jump." />
+          <EmptyState icon={Layers} title="All projects are on track" description="No overdue tasks detected today." />
         )}
       </div>
     </motion.div>
