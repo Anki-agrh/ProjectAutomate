@@ -116,11 +116,41 @@ def manage_overdue_tasks(request: OverdueCheckRequest, db: Session = Depends(get
     
     db.commit()
     
+    import re
+    all_actions = []
+    historical_tasks = db.query(models.Task).filter(
+        models.Task.assignment_reason.isnot(None),
+        models.Task.project.has(manager_id=current_user.user_id)
+    ).all()
+    
+    for t in historical_tasks:
+        reason = t.assignment_reason
+        emp = db.query(models.Employee).filter(models.Employee.user_id == t.assigned_to).first()
+        emp_name = emp.name if emp else "Unknown"
+        
+        if "[REASSIGNED from " in reason:
+            m = re.search(r'\[REASSIGNED from (.*?) (?:because|due to)', reason)
+            old_emp = m.group(1) if m else "Unknown"
+            all_actions.append({
+                "task": t.title,
+                "action": "Reassigned",
+                "old_employee": old_emp,
+                "new_employee": emp_name,
+                "new_deadline": t.deadline_date
+            })
+        elif "[EXTENSION]" in reason:
+            all_actions.append({
+                "task": t.title,
+                "action": "Extended",
+                "employee": emp_name,
+                "new_deadline": t.deadline_date
+            })
+    
     return {
         "status": "success",
         "message": f"Scanned for tasks older than {request.simulated_today}",
         "tasks_processed": len(overdue_tasks),
-        "actions": actions_taken
+        "actions": all_actions
     }
 
 @router.get("/employee/{user_id}/tasks")

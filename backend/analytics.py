@@ -94,7 +94,9 @@ def get_project_gantt(project_id: str, db: Session = Depends(get_db), current_us
             "end": task.deadline_date,
             "progress": 100 if task.status == "Completed" else 0,
             "dependencies": [],
-            "assigned_to": task.assigned_employee.name if task.assigned_employee else "Unassigned"
+            "assigned_to": task.assigned_employee.name if task.assigned_employee else "Unassigned",
+            "is_extended": "[EXTENSION]" in (task.assignment_reason or ""),
+            "is_reassigned": "[REASSIGNED" in (task.assignment_reason or "")
         })
         
     return gantt_data
