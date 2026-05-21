@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
 fastapi
 uvicorn[standard]
 gunicorn
@@ -7,6 +9,7 @@ python-dotenv
 pydantic
 PyJWT
 passlib[bcrypt]
+argon2-cffi
 python-multipart
 google-genai
 sentence-transformers
