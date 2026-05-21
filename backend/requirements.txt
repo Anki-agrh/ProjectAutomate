@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+gunicorn
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+PyJWT
+passlib[bcrypt]
+python-multipart
+google-genai
+sentence-transformers
+scikit-learn
+numpy
+pandas
+joblib
