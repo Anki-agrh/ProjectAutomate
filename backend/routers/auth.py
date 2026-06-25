@@ -62,6 +62,7 @@ def generate_dummy_logins(db: Session = Depends(get_db)):
     
     updated_count = 0
     hashed_default_pwd = get_password_hash("password123")
+    seen_emails = set()
     
     for emp in employees:
         if emp.email == "admin@scrummaster.com":
@@ -70,9 +71,19 @@ def generate_dummy_logins(db: Session = Depends(get_db)):
         if emp.name:
             clean_name = emp.name.lower().replace(" ", ".")
             clean_name = ''.join(c for c in clean_name if c.isalnum() or c == '.')
-            emp.email = f"{clean_name}@scrummaster.com"
+            base_email = f"{clean_name}@scrummaster.com"
         else:
-            emp.email = f"emp{emp.user_id[:8]}@scrummaster.com"
+            base_email = f"emp{emp.user_id[:8]}@scrummaster.com"
+            
+        final_email = base_email
+        counter = 1
+        while final_email in seen_emails:
+            name_part, domain_part = base_email.split("@")
+            final_email = f"{name_part}{counter}@{domain_part}"
+            counter += 1
+            
+        emp.email = final_email
+        seen_emails.add(final_email)
             
         emp.hashed_password = hashed_default_pwd
         
