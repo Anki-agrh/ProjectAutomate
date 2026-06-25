@@ -19,15 +19,8 @@ def get_projects(db: Session = Depends(get_db), current_user: models.Employee = 
 @router.post("/generate-project")
 def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get_db), current_user: models.Employee = Depends(get_current_user)):
     new_project_id = str(uuid.uuid4())
-    new_project = models.Project(
-        project_id=new_project_id, 
-        name=request.name, 
-        description=request.description,
-        manager_id=current_user.user_id
-    )
-    db.add(new_project)
-    db.commit()
-
+    
+    # Generate roadmap first before saving anything to DB
     ai_phases = break_down_project(request.description)
     global_workload_tracker = {}
     
@@ -117,6 +110,14 @@ def create_and_assign_project(request: ProjectRequest, db: Session = Depends(get
             "phase_name": phase_title,
             "tasks": current_phase_tasks
         })
+        
+    new_project = models.Project(
+        project_id=new_project_id, 
+        name=request.name, 
+        description=request.description,
+        manager_id=current_user.user_id
+    )
+    db.add(new_project)
             
     db.commit()
     return {
