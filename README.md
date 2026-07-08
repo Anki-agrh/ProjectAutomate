@@ -29,22 +29,21 @@ I built ProjectAutomate to bridge the gap between traditional project management
 - **Interactive Dashboards:** Real-time metrics and beautiful visualizations using Recharts and Framer Motion.
 
 ## Architecture Flow Diagram
-   React UI
-    ↓
-   Axios
-    ↓
-FastAPI Routes
-    ↓
-Business Logic
-    ↓
-Machine Learning Model
-    ↓
-  Gemini API
 
-    ↓
- PostgreSQL
-    ↓
-  Response
+```mermaid
+flowchart LR
+    A[React UI] -- Axios --> B[FastAPI Routes]
+    B --> C{Business Logic}
+    C -- Matches tasks --> D[Scikit-Learn ML]
+    C -- Plans sprints --> E[Gemini API]
+    C -- Queries --> F[(PostgreSQL)]
+    
+    D -.-> C
+    E -.-> C
+    F -.-> C
+    
+    C -- JSON Response --> A
+```
 
 
 ## API Overview
